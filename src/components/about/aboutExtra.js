@@ -4,9 +4,9 @@ const AboutExtra = () => {
   return (
     <div className="max-w-7xl mx-auto mt-10">
       <div className="mt-10 px-8">
-        <h2 className="text-black text-4xl font-semibold">GATSBY FRAMEWORK</h2>
+        <h2 className="text-black text-4xl font-semibold">Dira Yetu (Vision)</h2>
         <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
-          Start building amazing web experiences
+          Kuona Tanzania isiyo na dawa za kulevya—jamii yenye afya, heshima na malengo, iliyo huru dhidi ya minyororo ya uraibu.
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting
