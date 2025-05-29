@@ -12,7 +12,7 @@ const Footer = () => {
             <div>
               <img className="max-h-28 max-w-xs" src={logo} alt="Holo"></img>
               <p className="text-black opacity-70 text-sm mt-5 ">
-                Maashaalah bila Dawa za kulevya<br></br> personalized website starter
+                Maisha bila Dawa za kulevya<br></br>
                 Inawezekana
                 <br></br>
                 Kwa Leo tu.
@@ -33,7 +33,7 @@ const Footer = () => {
                     target="_blank"
                     href="https://travislord.xyz"
                   >
-                    By TL
+                    Na TL
                   </a>
                   <a
                     href="https://github.com/lilxyzz/holo-theme"
