@@ -12,7 +12,7 @@ const AboutHeader = () => {
         </div>
         <div className="mt-10 px-8">
           <h1 className="font-bold text-xl text-black text-gradient bg-gradient-to-r from-pink to-purple">
-            Pilimisanah Foundation Sober House ni nin? 
+            Pilimisanah Foundation Sober House ni nini? 
 
           </h1>
           <h2 className="text-black text-6xl font-semibold leading-snug xxs:text-lg xs:text-lg sm:text-3xl lg:text-6xl">
