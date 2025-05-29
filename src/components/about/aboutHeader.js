@@ -12,11 +12,10 @@ const AboutHeader = () => {
         </div>
         <div className="mt-10 px-8">
           <h1 className="font-bold text-xl text-black text-gradient bg-gradient-to-r from-pink to-purple">
-            What is Holo?
+            PILI MISSANA Foundation ni nini?
           </h1>
           <h2 className="text-black text-6xl font-semibold leading-snug xxs:text-lg xs:text-lg sm:text-3xl lg:text-6xl">
-            A visually captivating and lightning-fast open-source theme crafted
-            on the Gatsby framework.
+         Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidiq waraibu zaidi ya 3500,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya.
           </h2>
         </div>
       </div>
