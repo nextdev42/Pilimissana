@@ -12,8 +12,8 @@ const About = () => {
   return (
     <Layout>
       <Seo
-        title="About - Holo"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
+        title="Kuhusu - PILI Misana Foundation"
+        description="Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidiq waraibu zaidi ya 3500,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya."
       ></Seo>
       <AboutHeader></AboutHeader>
       <AboutPage></AboutPage>
