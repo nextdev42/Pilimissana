@@ -9,22 +9,33 @@ const AboutExtra = () => {
           Kuona Tanzania isiyo na dawa za kulevya—jamii yenye afya, heshima na malengo, iliyo huru dhidi ya minyororo ya uraibu.
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-        Maadili Yetu ya Msingi (Core Values)
-
+        Maadili Yetu ya Msingi (Core Values)</p>
+<p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+      
 1. Huruma – Tunakutana na kila mtu kwa heshima na upendo, bila kujali historia yake.
-
+    </p>
+<p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+      
 
 2. Uadilifu – Tunazingatia ukweli, uwazi na uwajibikaji katika kila hatua ya kazi yetu.
-
+   </p> 
+<p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+      
 
 3. Matumaini – Tunaamini kuwa kila mtu anaweza kupona, haijalishi changamoto alizopitia.
-
+    </p>
+<p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+      
 
 4. Mabadiliko – Tunahimiza ukuaji wa kibinafsi, uwajibikaji na kujifunza kwa maisha yote.
-
+  </p>  
+<p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+      
 
 5. Jamii – Tunaamini kuwa uponyaji wa kweli hutokea ndani ya mahusiano na msaada wa pamoja.
-
+    </p>
+<p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+ </p>     
 
 6. Nidhamu – Tunadumisha mpangilio na uthabiti kama nguzo muhimu ya safari ya uponyaji.
         </p>
