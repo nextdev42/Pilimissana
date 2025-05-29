@@ -43,14 +43,14 @@ const WorkPage = () => {
       </Fade>
 
       <div className="mt-10 px-8">
-        <h2 className="text-black text-4xl font-semibold">PERFORMANCE</h2>
+        <h2 className="text-black text-4xl font-semibold">Dhamira Yetu (Mission)</h2>
         <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
           Time to lock new speeds
         </h3>
-
+         
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-         Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidiq waraibu zaidi ya 3500,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya.
-        </p>
+        Kutoa huduma za tiba ya uraibu kwa huruma na kwa kutumia mbinu zenye ushahidi wa kitaalamu, ili kuwawezesha watu wanaotaka kuachana na dawa za kulevya kupata uhuru na kujenga maisha yenye maana—kiakili, kihisia, kijamii na kiroho.
+       </p>
       </div>
     </div>
   )
