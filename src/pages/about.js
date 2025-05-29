@@ -1,6 +1,6 @@
 import React from "react"
 import AboutPage from "../components/about/aboutPage"
-
+import AboutTwo from "../components/about/aboutTwopage"
 import AboutGrid from "../components/about/aboutGrid"
 import Seo from "../components/seo"
 
@@ -19,6 +19,7 @@ const About = () => {
       <AboutPage></AboutPage>
       <AboutGrid></AboutGrid>
       <AboutExtra></AboutExtra>
+      <AboutTwo></AboutTwo>
     </Layout>
   )
 }
