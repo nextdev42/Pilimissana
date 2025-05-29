@@ -12,20 +12,20 @@ const Footer = () => {
             <div>
               <img className="max-h-28 max-w-xs" src={logo} alt="Holo"></img>
               <p className="text-black opacity-70 text-sm mt-5 ">
-                A stunning and minimal<br></br> personalized website starter
-                theme
+                Maashaalah bila Dawa za kulevya<br></br> personalized website starter
+                Inawezekana
                 <br></br>
-                built with Gatsby.
+                Kwa Leo tu.
               </p>
               <p className="text-white text-lg font-bold mt-20">
                 <span className="text-black font-montserrat font-semibold mt-20">
-                  &copy; {new Date().getFullYear()}. All Rights Reserved.
+                  &copy; {new Date().getFullYear()}. Haki zote zimehifadhiwa.
                 </span>
               </p>
               <div className="text-black font-bold block-inline">
                 <p>
                   <a className="text-black font-bold block-inline" href="/">
-                    Holo
+                    PILI MISSANA Foundation 
                   </a>
 
                   <a
@@ -55,7 +55,7 @@ const Footer = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about">Kuhusu Sisi</Link>
                 </li>
                 <li>
                   <Link to="/gallery">Gallery</Link>
@@ -64,7 +64,7 @@ const Footer = () => {
                   <Link to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact">Wasiliana Nasi</Link>
                 </li>
               </ul>
             </div>
