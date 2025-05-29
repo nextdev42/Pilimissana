@@ -9,15 +9,24 @@ const AboutExtra = () => {
           Kuona Tanzania isiyo na dawa za kulevya—jamii yenye afya, heshima na malengo, iliyo huru dhidi ya minyororo ya uraibu.
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+        Maadili Yetu ya Msingi (Core Values)
+
+1. Huruma – Tunakutana na kila mtu kwa heshima na upendo, bila kujali historia yake.
+
+
+2. Uadilifu – Tunazingatia ukweli, uwazi na uwajibikaji katika kila hatua ya kazi yetu.
+
+
+3. Matumaini – Tunaamini kuwa kila mtu anaweza kupona, haijalishi changamoto alizopitia.
+
+
+4. Mabadiliko – Tunahimiza ukuaji wa kibinafsi, uwajibikaji na kujifunza kwa maisha yote.
+
+
+5. Jamii – Tunaamini kuwa uponyaji wa kweli hutokea ndani ya mahusiano na msaada wa pamoja.
+
+
+6. Nidhamu – Tunadumisha mpangilio na uthabiti kama nguzo muhimu ya safari ya uponyaji.
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-start lg:justify-start">
           <div className="rounded-md">
