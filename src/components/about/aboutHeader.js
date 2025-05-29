@@ -12,10 +12,40 @@ const AboutHeader = () => {
         </div>
         <div className="mt-10 px-8">
           <h1 className="font-bold text-xl text-black text-gradient bg-gradient-to-r from-pink to-purple">
-            PILI MISSANA Foundation ni nini?
+            Pilimisanah Foundation Sober House ni bin? 
+
           </h1>
           <h2 className="text-black text-6xl font-semibold leading-snug xxs:text-lg xs:text-lg sm:text-3xl lg:text-6xl">
-         Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidiq waraibu zaidi ya 3500,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya.
+         
+Pilimisanah Foundation Sober House ni taasisi ya kijamii isiyo ya kiserikali iliyoanzishwa mwaka 2012, yenye lengo la kuwasaidia watu wanaokumbwa na changamoto ya uraibu wa dawa za kulevya na kuwaongoza kuelekea katika maisha ya uponyaji na mabadiliko ya kweli. Tunatoa huduma za tiba ya uraibu, ushauri nasaha, marekebisho ya tabia, na uhamasishaji wa kijamii kwa waraibu na familia zao.
+
+Chanzo cha kuanzishwa kwa taasisi hii ni maumivu ya binafsi ya mwanzilishi na mkurugenzi wetu, Pilimisanah, ambaye alipoteza baba yake kutokana na uraibu wa dawa za kulevya. Kupitia tukio hili la majonzi, Pilimisanah aliona haja ya kuwepo kwa sehemu salama inayotoa msaada wa kweli kwa watu wanaopambana na uraibu, na hivyo kuamua kuanzisha taasisi hii kwa lengo la kusaidia wengine wasiopoteze maisha au familia zao kama ilivyomtokea yeye.
+
+Tangu kuanzishwa kwake, taasisi imekua kutoka kuwa na kituo kimoja hadi kuwa na vituo vitano vya huduma:
+
+Dar es Salaam: Kisiwani, Big Stone, Mikwambe, Jilambe
+
+Mikoani: Mwanza na Arusha
+
+
+Vituo hivi vinasimamiwa na timu ya wataalamu, waliobobea katika huduma za tiba ya uraibu na afya ya akili, pamoja na wale waliopitia uraibu na kupona—ambao sasa wanatumia uzoefu wao kuwasaidia wengine.
+
+Mpaka sasa, zaidi ya waraibu 3000 wamepata huduma zetu, wengi wao wakirejea kwenye maisha yenye matumaini, heshima na mchango chanya kwa familia na taifa.
+
+Dira yetu ni jamii ya Kitanzania iliyo salama dhidi ya uraibu – inayojali, inayosaidia, na inayoamini kwamba mabadiliko yanawezekana.
+
+Karibu ushiriki nasi katika mapambano dhidi ya uraibu kupitia:
+
+Kujitolea kwa wakati au maarifa
+
+Ushirikiano na mashirika mengine
+
+Msaada wa kifedha
+
+Kueneza ujumbe wa matumaini
+
+
+Pilimisanah Foundation – Maumivu Yaliyogeuka Nguvu ya Kuponya Wengine.
           </h2>
         </div>
       </div>
