@@ -89,25 +89,25 @@ const FeatureSection = () => {
         </div>
       </div>
 
-      <Fade bottom cascade>
+    <Fade bottom cascade>
         <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row">
           <div className="w-2/6 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-2/6">
             <span className="text-black font-semibold font-montserrat text-4xl">
-              TECH STACK
+              Huduma zetu
             </span>
             <div className="mt-5">
               <div>
-                <p className="text-black text-2xl">Gatsby 5+</p>
-                <p className="text-black opacity-50 text-sm">SSG and more...</p>
+                <p className="text-black text-2xl">Ushauri Nasaha</p>
+                <p className="text-black opacity-50 text-sm">(Counseling)</p>
               </div>
               <div className="mt-5">
-                <p className="text-black text-2xl">React 18+</p>
-                <p className="text-black opacity-50 text-sm">Create more...</p>
+                <p className="text-black text-2xl">Tiba Tambuzi ya Tabia</p>
+                <p className="text-black opacity-50 text-sm">(CBT – Cognitive Behavioral Therapy)</p>
               </div>
               <div className="mt-5">
-                <p className="text-black text-2xl">Tailwind CSS 3+</p>
+                <p className="text-black text-2xl">Afya ya Akili</p>
                 <p className="text-black opacity-50 text-sm">
-                  A utility-first CSS
+                  (Mental Health Services)
                 </p>
               </div>
             </div>
