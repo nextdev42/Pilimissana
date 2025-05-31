@@ -194,14 +194,7 @@ const FeatureSection = () => {
          Tunaamini kuwa kwa kutumia njia hizi za kitaalamu, kila mtu ana nafasi ya kupona, kurejea katika jamii, na kuanza upya maisha yenye matumaini.
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div className="rounded-md">
-            <a
-              href="/contact/"
-              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
-            >
-              Send Enquiry
-            </a>
-          </div>
+          
         </div>
       </div>
 
