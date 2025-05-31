@@ -135,16 +135,38 @@ const FeatureSection = () => {
         Tiba hii husaidia mteja kubaini na kubadilisha mitazamo, fikra potofu, na tabia hatarishi zinazochochea uraibu.
         </p>
       </div>
-
       <div className="mt-10 px-8">
         <h2 className="text-black text-4xl font-semibold opacity-70">
-        ♂️ Afya ya Akili
+          ♂️ Afya ya Akili
         </h2>
         <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
-        (Mental Health Services)
+          (Mental Health Services)
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-        Tunatambua kuwa changamoto nyingi za uraibu huambatana na matatizo ya afya ya akili. Tunatoa huduma za tathmini, ushauri na ufuatiliaji wa afya ya akili kwa mteja..
+        Tunatambua kuwa changamoto nyingi za uraibu huambatana na matatizo ya afya ya akili. Tunatoa huduma za tathmini, ushauri na ufuatiliaji wa afya ya akili kwa mteja.
+        </p>
+      </div>
+      <div className="mt-10 px-8">
+        <h2 className="text-black text-4xl font-semibold opacity-70">
+        🔄 Mpango wa Hatua 12
+        </h2>
+        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+        (12 Step Program – Narcotics Anonymous)
+        </h3>
+        <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+        Tunatumia mfumo wa kimataifa wa hatua 12 uliothibitishwa kusaidia waraibu kukubali hali yao, kuachana na dawa za kulevya, na kuishi maisha mapya ya uwajibikaji, maadili, na matumaini.
+        </p>
+      </div>
+      
+      <div className="mt-10 px-8">
+        <h2 className="text-black text-4xl font-semibold opacity-70">
+        🧑‍🤝‍🧑 Tiba ya Kijamii
+        </h2>
+        <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
+        (Social Therapy)
+        </h3>
+        <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+         Kupitia shughuli za kijamii, michezo, kazi za pamoja na mijadala ya vikundi, tunawasaidia waraibu kujenga upya mahusiano, mawasiliano, na hali ya kujiamini katika jamii.
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md">
