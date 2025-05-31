@@ -17,7 +17,7 @@ const Header = () => {
             </h2>
 
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-             Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidiq waraibu zaidi ya 3000,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya.
+             Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidia waraibu zaidi ya 3000,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya.
             </p>
 
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
