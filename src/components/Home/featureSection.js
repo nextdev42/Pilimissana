@@ -118,11 +118,11 @@ const FeatureSection = () => {
                 <p className="text-black text-2xl">Tiba ya Kijamii</p>
                 <p className="text-black opacity-50 text-sm">(Social Therapy)</p>
               </div>
-               <div>
+               <div className="mt-5">
                 <p className="text-black text-2xl">Tiba ya Familia</p>
                 <p className="text-black opacity-50 text-sm">(Family Therapy)</p>
               </div>
-                <div>
+              <div className="mt-5">
                 <p className="text-black text-2xl">Ujuzi wa Maisha</p>
                 <p className="text-black opacity-50 text-sm">(Life Skills Training)</p>
               </div>        
