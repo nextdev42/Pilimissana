@@ -115,19 +115,10 @@ const FeatureSection = () => {
 
           <div className="w-4/6 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-4/6">
             <h2 className="text-white text-4xl">
-              Start building amazing web experiences
+              🧠 Ushauri Nasaha (Counseling)
             </h2>
             <p className="mt-10 text-white opacity-70">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+             Tunatoa ushauri nasaha wa mtu mmoja mmoja, wa kikundi, na wa ndoa au familia, kwa ajili ya kusaidia waraibu kuelewa hali yao na kupata mwongozo wa kihisia na kisaikolojia katika safari ya kupona.
             </p>
           </div>
         </div>
