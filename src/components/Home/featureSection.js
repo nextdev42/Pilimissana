@@ -243,7 +243,7 @@ const FeatureSection = () => {
         </div>
       </Fade>
 
-      <Fade bottom cascade>
+{/* <Fade bottom cascade>
         <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
           <div className="w-1/3 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
             <h3 className="text-black text-2xl">v1.0.0</h3>
@@ -259,7 +259,7 @@ const FeatureSection = () => {
             <h4 className="mt-10 text-white opacity-70 text-xl">Give support</h4>
           </div>
         </div>
-      </Fade>
+      </Fade>*/} 
     </div>
   );
 };
