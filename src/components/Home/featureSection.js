@@ -58,7 +58,7 @@ const FeatureSection = () => {
                   href="tel:#"
                   className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
-                  Call Us Now
+                  Tupigie Sasa 
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -110,6 +110,15 @@ const FeatureSection = () => {
                   (Mental Health Services)
                 </p>
               </div>
+            <div className="mt-5">
+                <p className="text-black text-2xl">Mpango wa Hatua 12</p>
+                <p className="text-black opacity-50 text-sm">(12 Step Program – Narcotics Anonymous)</p>
+              </div>
+             <div className="mt-5">
+                <p className="text-black text-2xl">Tiba ya Kijamii</p>
+                <p className="text-black opacity-50 text-sm">(Social Therapy)</p>
+              </div>
+                        
             </div>
           </div>
 
