@@ -11,19 +11,19 @@ const Contact = () => {
   return (
     <Layout>
       <Seo
-        title="Contact - Holo"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        title="Wasiliana nasi"
+        description="Kwa changamoto za dawa zote za kulevya ikiwemo pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya"
       ></Seo>
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">
         <Fade duration={1200}>
           <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
-            <h1 className="text-3xl text-white">CONTACT HOLO</h1>
+            <h1 className="text-3xl text-white">Wasiliana nasi</h1>
             <h2 className=" text-black text-gradient bg-gradient-to-r from-pink to-purple text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl">
               Gatsby Theme
             </h2>
             <p className="text-lg mt-2 opacity-70 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
-              A stunning and minimal personalized website starter theme.
+              Tuna toa huduma bora kwa changamoto za dawa za kulevya za aina zote.
             </p>
 
             <div className="w-full shrink-0 grow-0 basis-auto lg:w-ful mt-10">
@@ -50,10 +50,10 @@ const Contact = () => {
                     </div>
                     <div className="ml-2 grow">
                       <p className="mb-2 font-bold underline decoration-pink">
-                        Phone
+                        Simu
                       </p>
                       <p className="text-neutral-500 mb-2">
-                        <a href="tel:+#">(08) 9000 000</a>
+                        <a href="tel:+#">(+255) 715744464</a>
                       </p>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ const Contact = () => {
                         Email
                       </p>
                       <p className="text-neutral-500 mb-2">
-                        <a href="mailto:hello@holo.com?subject=Contact Holo for help.">
+                        <a href="mailto:hello@holo.com?subject=Wasiliana nasi kwa msaada zaidi.">
                           hello@holo.com
                         </a>
                       </p>
@@ -112,9 +112,9 @@ const Contact = () => {
                     </div>
                     <div className="ml-2 grow">
                       <p className="mb-2 font-bold underline decoration-pink">
-                        Location
+                        Maeneo
                       </p>
-                      <p className="text-neutral-500 mb-2">Worldwide</p>
+                      <p className="text-neutral-500 mb-2">Dar-es-salaam, Mwanza na Arusha</p>
                     </div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const Contact = () => {
                     </div>
                     <div className="ml-2 grow">
                       <p className="mb-2 font-bold underline decoration-pink">
-                        Opening Hours
+                        Masaa ya kazi
                       </p>
                       <p className="text-neutral-500 mb-2">24/7</p>
                     </div>
@@ -153,7 +153,7 @@ const Contact = () => {
                 <div className="sm:mr-5 xxs:mr-0">
                   <label>
                     <Input
-                      placeholder="Your Name"
+                      placeholder="Jina lako"
                       type="text"
                       name="name"
                     ></Input>
@@ -162,7 +162,7 @@ const Contact = () => {
                 <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
                   <label>
                     <Input
-                      placeholder="Your Email"
+                      placeholder="Email yako"
                       type="email"
                       name="email"
                     ></Input>
@@ -174,7 +174,7 @@ const Contact = () => {
                 <div className="sm:mr-5 xxs:mr-0">
                   <label>
                     <Input
-                      placeholder="Your Company"
+                      placeholder="kampuni/shirika"
                       type="company"
                       name="company"
                     ></Input>
@@ -184,7 +184,7 @@ const Contact = () => {
                   <label>
                     {" "}
                     <Input
-                      placeholder="Your Phone"
+                      placeholder="namba ya simu yako"
                       type="phone"
                       name="phone"
                     ></Input>
@@ -195,7 +195,7 @@ const Contact = () => {
                 <textarea
                   className="mt-5 w-full bg-bg bg-opacity-20 rounded-xl p-5 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                   rows="5"
-                  placeholder="How can we help you?"
+                  placeholder="Tukusaidie eje?"
                   type="text"
                   name="Message"
                 ></textarea>
@@ -204,7 +204,7 @@ const Contact = () => {
                 <label>
                   <Button
                     type="submit"
-                    title="Send Message"
+                    title="Tuma Ujumbe "
                     colorClass="bg-gradient-to-r from-pink to-purple font-montserrat"
                     marginClass="mt-5"
                   ></Button>
