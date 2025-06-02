@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-import hero from "../../images/removed-Holographic.webp"
+import hero from "../../images/Polish_20250602_145200736.jpg"
 
 const Header = () => {
   return (
