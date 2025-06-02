@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
             <h1 className="text-3xl text-white">Wasiliana nasi</h1>
             <h2 className=" text-black text-gradient bg-gradient-to-r from-pink to-purple text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl">
-              Gatsby Theme
+              PILI MISSANA FOUNDATION 
             </h2>
             <p className="text-lg mt-2 opacity-70 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
               Tuna toa huduma bora kwa changamoto za dawa za kulevya za aina zote.
