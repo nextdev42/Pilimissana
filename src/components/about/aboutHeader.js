@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-import Image3 from "../../images/Polish_20250602_190500253.jpg"
+import Image3 from "../../images/Polish_20250602_191502404.jpg"
 
 const AboutHeader = () => {
   return (
