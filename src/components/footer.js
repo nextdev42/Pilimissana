@@ -33,7 +33,7 @@ const Footer = () => {
                     target="_blank"
                     href="https://travislord.xyz"
                   >
-                    Na TL
+                    +255715744464
                   </a>
                   <a
                     href="https://github.com/lilxyzz/holo-theme"
