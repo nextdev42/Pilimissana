@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 // Assets
 import HeroImage from "../../images/Polish_20250602_152434075.jpg";
-import Image1 from "../../images/3D-liquid-abstract-1.webp";
+import Image1 from "../../images/Polish_20250602_155142242.jpg";
 import Image2 from "../../images/3D-liquid-abstract.webp";
 import Image3 from "../../images/3D-liquid-abstract-3.webp";
 
