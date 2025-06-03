@@ -1,54 +1,3 @@
-<form 
-  className="mt-5" 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  netlify-honeypot="bot-field"
-  action="/contact"
->
-  <input type="hidden" name="form-name" value="contact" />
-  <p hidden>
-    <label>
-      Don’t fill this out: <input name="bot-field" />
-    </label>
-  </p>
-
-  <div className="flex xxs:flex-col sm:flex-row">
-    <div className="sm:mr-5 xxs:mr-0">
-      <Input placeholder="Jina lako" type="text" name="name" />
-    </div>
-    <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-      <Input placeholder="Email yako" type="email" name="email" />
-    </div>
-  </div>
-
-  <div className="flex mt-5 xxs:flex-col sm:flex-row">
-    <div className="sm:mr-5 xxs:mr-0">
-      <Input placeholder="kampuni/shirika" type="text" name="company" />
-    </div>
-    <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-      <Input placeholder="namba ya simu yako" type="tel" name="phone" />
-    </div>
-  </div>
-
-  <label>
-    <textarea
-      className="mt-5 w-full bg-bg bg-opacity-20 rounded-xl p-5 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
-      rows="5"
-      placeholder="Tukusaidie eje?"
-      name="message"
-    ></textarea>
-  </label>
-
-  <div>
-    <Button
-      type="submit"
-      title="Tuma Ujumbe"
-      colorClass="bg-gradient-to-r from-pink to-purple font-montserrat"
-      marginClass="mt-5"
-    />
-  </div>
-</form>
 import React from "react"
 import Layout from "../components/layout"
 import Input from "../components/Atoms/input"
@@ -199,7 +148,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form className="mt-5" 
+            <form 
+  className="mt-5" 
   name="contact" 
   method="POST" 
   data-netlify="true" 
@@ -250,6 +200,7 @@ const Contact = () => {
   </div>
 </form>
 
+              
           </div>
         </Fade>
         <Fade bottom cascade>
