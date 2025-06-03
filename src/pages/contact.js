@@ -10,7 +10,7 @@ const Input = ({ placeholder, type, name, className }) => (
     type={type}
     name={name}
     placeholder={placeholder}
-    className={`p-3 border rounded ${className}`}
+    className={`p-3 border rounded text-blue-500 ${className}`}
   />
 )
 
