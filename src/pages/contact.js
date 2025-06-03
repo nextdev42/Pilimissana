@@ -148,6 +148,34 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+            {/* Hidden Netlify form for backend registration */}
+<form name="contact" netlify="true" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="text" name="company" />
+  <input type="tel" name="phone" />
+  <textarea name="message"></textarea>
+</form>
+
+{/* Visible form users interact with */}
+<form 
+  className="mt-5" 
+  name="contact" 
+  method="POST" 
+  data-netlify="true" 
+  netlify-honeypot="bot-field"
+  action="/contact"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>
+      Don’t fill this out: <input name="bot-field" />
+    </label>
+  </p>
+
+  {/* ...rest of your form fields */}
+</form>
+
             <form 
   className="mt-5" 
   name="contact" 
