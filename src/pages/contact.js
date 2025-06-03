@@ -148,8 +148,14 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form className="mt-5" name="contact" method="POST" netlify>
-              <div className="flex xxs:flex-col sm:flex-row">
+            <form className="mt-5" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+             <input type="hidden" name="form-name" value="contact" />
+             <p hidden>
+             <label>
+              Don’t fill this out: <input name="bot-field" />
+             </label>
+              </p>
+               <div className="flex xxs:flex-col sm:flex-row">
                 <div className="sm:mr-5 xxs:mr-0">
                   <label>
                     <Input
