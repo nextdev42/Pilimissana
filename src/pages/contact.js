@@ -6,6 +6,14 @@ import Fade from "react-reveal/Fade"
 import Seo from "../components/seo"
 
 import image from "../images/holographic-background.webp"
+const Input = ({ placeholder, type, name, className }) => (
+  <input
+    type={type}
+    name={name}
+    placeholder={placeholder}
+    className={`p-3 border rounded ${className}`}
+  />
+)
 
 const Contact = () => {
   return (
@@ -158,23 +166,9 @@ const Contact = () => {
 </form>
 
 {/* Visible form users interact with */}
-<form 
-  className="mt-5" 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  netlify-honeypot="bot-field"
-  action="/contact"
->
-  <input type="hidden" name="form-name" value="contact" />
-  <p hidden>
-    <label>
-      Don’t fill this out: <input name="bot-field" />
-    </label>
-  </p>
 
-  {/* ...rest of your form fields */}
-</form>
+ {/* ...rest of your form fields */}
+
 
             <form 
   className="mt-5" 
