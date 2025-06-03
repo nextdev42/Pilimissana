@@ -24,7 +24,7 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">
         <Fade duration={1200}>
-          <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5">
+          <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
             <h1 className="text-3xl text-white">Wasiliana nasi</h1>
             <h2 className=" text-black text-gradient bg-gradient-to-r from-pink to-purple text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl">
               PILI MISSANA FOUNDATION 
@@ -38,7 +38,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-3">
                   <div className="flex items-start">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-100 p-4 text-teal-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -68,7 +68,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-3">
                   <div className="flex items-start">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-100 p-4 text-teal-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -100,7 +100,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-3">
                   <div className="align-start flex">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-100 p-4 text-teal-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -128,7 +128,7 @@ const Contact = () => {
                 <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                   <div className="align-start flex">
                     <div className="shrink-0">
-                      <div className="inline-block rounded-md bg-teal-100 p-4 text-teal-700">
+                      <div className="inline-block rounded-md bg-teal-400-100 p-4 text-teal-700">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
