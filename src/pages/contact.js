@@ -24,7 +24,7 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">
         <Fade duration={1200}>
-          <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
+          <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5">
             <h1 className="text-3xl text-white">Wasiliana nasi</h1>
             <h2 className=" text-black text-gradient bg-gradient-to-r from-pink to-purple text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl">
               PILI MISSANA FOUNDATION 
