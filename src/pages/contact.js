@@ -204,7 +204,7 @@ const Contact = () => {
 
   <label>
     <textarea
-      className="mt-5 w-full bg-bg bg-opacity-20 rounded-xl p-5 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
+      className="mt-5 w-full bg-white text-blue-700 placeholder-blue-400 rounded-xl p-5 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
       rows="5"
       placeholder="Tukusaidie eje?"
       name="message"
