@@ -148,7 +148,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form className="mt-5" name="contact" method="POST" netlify>
+            <form className="mt-5" name="contact" action="https://submit-form.com/sEDKcAso6" method="POST">
               <div className="flex xxs:flex-col sm:flex-row">
                 <div className="sm:mr-5 xxs:mr-0">
                   <label>
