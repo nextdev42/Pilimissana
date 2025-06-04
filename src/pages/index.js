@@ -23,5 +23,27 @@ const IndexPage = ({ data }) => (
     </Layout>
   </div>
 )
+export const query = graphql`
+  query HomePageQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      sort: { frontmatter: { date: DESC } }
+      limit: 3
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+          rawMarkdownBody
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
