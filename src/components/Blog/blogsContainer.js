@@ -63,22 +63,40 @@ const BlogsContainer = ({ data }) => {
           ))}
         </div>
       </Fade>
-      <div className="w-auto p-8 m-4 h-72 sm:h-96 xs:h-96 xxs:h-96 mt-10 bg-gradient-to-r from-pink to-purple rounded-xl flex flex-col items-center justify-center">
-        <h2 className=" text-3xl font-bold text-black text-center">
-          KUPATA MAKALA YETU
-        </h2>
-        <h3 className="text-lg mt-2 opacity-60 text-black text-center">
-          Subscribe kwenye newsletter, tuta kutumia vitu vizuri tu!
-        </h3>
-        <div className="text-black hover:text-white mt-10 flex flex-col items-center justify-center">
-          <Input placeholder="weak Email yako"></Input>
-          <a
-            href="#"
-            className="mt-4 transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white rounded-lg border border-purple  hover:bg-purple"
-          >
-            kwenye orotha
-          </a>
-        </div>
+    <div className="w-auto p-8 m-4 h-72 sm:h-96 xs:h-96 xxs:h-96 mt-10 bg-gradient-to-r from-pink to-purple rounded-xl flex flex-col items-center justify-center">
+  <h2 className="text-3xl font-bold text-black text-center">
+    KUPATA MAKALA YETU
+  </h2>
+  <h3 className="text-lg mt-2 opacity-60 text-black text-center">
+    Subscribe kwenye newsletter, tuta kutumia vitu vizuri tu!
+  </h3>
+
+  <form
+    name="newsletter"
+    method="POST"
+    data-netlify="true"
+    className="mt-10 flex flex-col items-center justify-center"
+  >
+    {/* Required hidden input for Netlify to process the form */}
+    <input type="hidden" name="form-name" value="newsletter" />
+
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="weak Email yako"
+      className="text-black p-2 rounded mb-4"
+    />
+
+    <button
+      type="submit"
+      className="transition-all duration-500 ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-black hover:text-white rounded-lg border border-purple hover:bg-purple"
+    >
+      kwenye orotha
+    </button>
+  </form>
+</div>
+
       </div>
     </div>
   )
