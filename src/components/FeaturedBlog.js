@@ -1,19 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import { Link } from "gatsby"
 
 const FeaturedBlog = ({ posts }) => {
-  if (!posts || posts.length === 0) return null
-
-  const [mainPost, ...otherPosts] = posts.slice(0, 3)
-
-  // Trim to 45 words helper
-  const trimToWords = (text, count = 45) => {
-    if (!text) return ""
-    const words = text.trim().split(/\s+/)
-    return words.slice(0, count).join(" ") + (words.length > count ? "..." : "")
-  }
-
   return (
     <Fade duration={2200}>
       <div className="bg-transparent">
@@ -21,50 +9,56 @@ const FeaturedBlog = ({ posts }) => {
           <h2 className="text-black text-4xl opacity-70 font-semibold pl-4">
             Machapisho Mapya
           </h2>
-          <h3 className="text-black pl-4 text-6xl font-bold text-gradient bg-gradient-to-r from-pink to-purple">
+          <h3 className="text-black pl-4 text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
             Makala mpya
           </h3>
 
-          {/* Main Featured Post */}
-          <div className="blog-hover bg-gradient-to-r from-pink to-purple border mt-10 border-gray-200 rounded-lg p-8 md:p-12 mb-8">
-            <h2 className="text-black text-3xl font-semibold mb-2">
-              {mainPost.node.frontmatter.title}
-            </h2>
-            <p className="text-lg text-black opacity-60 mb-6">
-              {trimToWords(mainPost.node.rawMarkdownBody, 45)}
-            </p>
-            <Link
-              to={`/blog${mainPost.node.fields.slug}`}
-              className="inline-flex items-center py-2.5 px-5 text-base font-medium text-black hover:text-white rounded-lg border border-purple hover:bg-purple transition-all duration-500 ease-in-out"
-            >
-              Soma zaidi
-              <svg className="w-3.5 h-3.5 ml-2" viewBox="0 0 14 10" fill="none">
-                <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </Link>
-          </div>
+          <div className="grid md:grid-cols-2 gap-8 mt-10">
+            {posts.map(({ node }, index) => {
+              const { title, date } = node.frontmatter
+              const { slug } = node.fields
+              const trimmed = node.rawMarkdownBody
+                .split(/\s+/)
+                .slice(0, 45)
+                .join(" ") + "..."
 
-          {/* Other 2 Posts */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {otherPosts.map(({ node }) => (
-              <div key={node.fields.slug} className="blog-hover bg-white rounded-lg p-8 md:p-12">
-                <h2 className="text-gray-900 text-3xl font-semibold mb-2">
-                  {node.frontmatter.title}
-                </h2>
-                <p className="text-lg text-gray-500 mb-4">
-                  {trimToWords(node.rawMarkdownBody, 45)}
-                </p>
-                <Link
-                  to={`/blog${node.fields.slug}`}
-                  className="inline-flex items-center py-2.5 px-5 text-base font-medium text-black hover:text-white rounded-lg border border-purple hover:bg-purple transition-all duration-500 ease-in-out"
+              return (
+                <div
+                  key={slug}
+                  className={`blog-hover rounded-lg p-8 md:p-12 ${
+                    index === 0
+                      ? "bg-gradient-to-r from-pink to-purple text-black border border-gray-200 mb-8"
+                      : "bg-white text-gray-900"
+                  }`}
                 >
-                  Soma zaidi
-                  <svg className="w-3.5 h-3.5 ml-2" viewBox="0 0 14 10" fill="none">
-                    <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </Link>
-              </div>
-            ))}
+                  <h2 className="text-3xl font-semibold mb-2">{title}</h2>
+                  <p className="text-lg font-normal opacity-70 mb-4">
+                    {trimmed}
+                  </p>
+                  <a
+                    href={slug}
+                    className="transition-all duration-500 ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white rounded-lg border border-purple hover:bg-purple"
+                  >
+                    Soma zaidi
+                    <svg
+                      className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
