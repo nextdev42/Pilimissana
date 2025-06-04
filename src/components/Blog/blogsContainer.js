@@ -68,7 +68,7 @@ const BlogsContainer = ({ data }) => {
           KUWA WA KWANZA KUPATA MAKALA YETU
         </h2>
         <h3 className="text-lg mt-2 opacity-60 text-black text-center">
-          Subscribe kwenye newsletter, tutakuwa kutumia vitu vizuri tu!
+          Subscribe kwenye newsletter, tuta kutumia vitu vizuri tu!
         </h3>
         <div className="text-black hover:text-white mt-10 flex flex-col items-center justify-center">
           <Input placeholder="weak Email yako"></Input>
