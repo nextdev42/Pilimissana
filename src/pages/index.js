@@ -13,9 +13,9 @@ const IndexPage = ({ data }) => (
   <div className="h-auto w-screen">
     <Layout>
       <Seo
-        title="Holo - Gatsby Theme"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
-      />
+        title: "PILI MISSANA - Sober house foundation"
+        description: "Tuna toa tiba za maradhi ya uraibu wa madawa ya kulevya kama vile pombe, bangi, heroin, cocaine, tramadol, na dawa nyingine za kulevya" 
+        />
       <Header />
       <FeatureSection />
       <FeaturedBlog posts={data.allMarkdownRemark.edges.slice(0, 3)} />
