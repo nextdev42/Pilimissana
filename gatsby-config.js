@@ -88,8 +88,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Holo - Gatsby Starter Theme`,
-        short_name: `Holo`,
+        name: `Pilimissana Sober House`,
+        short_name: `Pilimissana`,
         start_url: `/`,
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
