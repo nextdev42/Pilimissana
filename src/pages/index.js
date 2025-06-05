@@ -13,9 +13,9 @@ const IndexPage = ({ data }) => (
   <div className="h-auto w-screen">
     <Layout>
       <Seo
-        title: "PILI MISSANA - Sober house foundation"
-        description: "Tuna toa tiba za maradhi ya uraibu wa madawa ya kulevya kama vile pombe, bangi, heroin, cocaine, tramadol, na dawa nyingine za kulevya" 
-        />
+        title="PILI MISSANA - Sober house foundation"
+        description="Tuna toa tiba za maradhi ya uraibu wa madawa ya kulevya kama vile pombe, bangi, heroin, cocaine, tramadol, na dawa nyingine za kulevya"
+      />
       <Header />
       <FeatureSection />
       <FeaturedBlog posts={data.allMarkdownRemark.edges.slice(0, 3)} />
