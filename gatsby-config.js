@@ -28,6 +28,15 @@ module.exports = {
         name: "_content",
       },
     },
+    
+    {
+       resolve: "gatsby-source-filesystem",
+       options: {
+         path: `${__dirname}/src/gallery`,
+         name: "gallery",
+  },
+},
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
