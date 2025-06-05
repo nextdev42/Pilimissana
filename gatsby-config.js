@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `PILI MISSANA - Foundation`,
-    description: `highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
+    title: `PILI MISSANA - Sober house`,
+    description: `Tuna toa tiba za mradhi ya uraibu wa madawa ya kulevya kama vile pombe, bangi, heroin, cocaine, tramadol, na dawa nyingine za kulevya`,
     siteUrl: "https://holo-theme.netlify.app/",
-    author: `Travis Lord <hi@travislord.xyz>`,
+    author: `Said Abulkadir <hi@travislord.xyz>`,
   },
   plugins: [
     `gatsby-plugin-image`,
