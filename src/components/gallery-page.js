@@ -1,10 +1,29 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal/Fade"
 
 import HeroImage from "../images/3D-liquid-abstract-2.webp"
-import BackGroud from "../images/holographic-background.webp"
 
 const Gallery = () => {
+  const data = useStaticQuery(graphql`
+    query GalleryImagesQuery {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/gallery/" } }
+        sort: { frontmatter: { title: ASC } }
+      ) {
+        nodes {
+          id
+          frontmatter {
+            title
+            image
+          }
+        }
+      }
+    }
+  `)
+
+  const galleryItems = data.allMarkdownRemark.nodes
+
   return (
     <div className="max-w-7xl mx-auto mt-10">
       <Fade duration={2200}>
@@ -24,7 +43,7 @@ const Gallery = () => {
             </p>
           </div>
           <div className="rounded-xl w-auto h-full object-cover flex justify-center">
-            <img src={HeroImage} alt="HeroImage"></img>
+            <img src={HeroImage} alt="HeroImage" />
           </div>
         </div>
       </Fade>
@@ -32,112 +51,24 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-8 mt-5">
         <Fade bottom cascade>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-            <a
-              href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:h-80"
-            >
-              <img
-                src={BackGroud}
-                loading="lazy"
-                alt="HeroImage"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                Clean Animations
-              </span>
-            </a>
-
-            <a
-              href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:col-span-2 md:h-80"
-            >
-              <img
-                src={BackGroud}
-                loading="lazy"
-                alt="HeroImage"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                Easy to use
-              </span>
-            </a>
-
-            <a
-              href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:col-span-2 md:h-80"
-            >
-              <img
-                src={BackGroud}
-                loading="lazy"
-                alt="HeroImage"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                Responsive
-              </span>
-            </a>
-
-            <a
-              href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:h-80"
-            >
-              <img
-                src={BackGroud}
-                loading="lazy"
-                alt="HeroImage"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                Tailwind CSS
-              </span>
-            </a>
-            <a
-              href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:h-80"
-            >
-              <img
-                src={BackGroud}
-                loading="lazy"
-                alt="HeroImage"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                CMS Ready
-              </span>
-            </a>
-
-            <a
-              href="#"
-              className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:col-span-2 md:h-80"
-            >
-              <img
-                src={BackGroud}
-                loading="lazy"
-                alt="HeroImage"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                Fast
-              </span>
-            </a>
+            {galleryItems.map(({ id, frontmatter }) => (
+              <a
+                key={id}
+                href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 md:h-80"
+              >
+                <img
+                  src={frontmatter.image}
+                  loading="lazy"
+                  alt={frontmatter.title}
+                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
+                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
+                  {frontmatter.title}
+                </span>
+              </a>
+            ))}
           </div>
         </Fade>
       </div>
@@ -146,25 +77,3 @@ const Gallery = () => {
 }
 
 export default Gallery
-
-/* 
-    <div className="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">
-        <img src="https://source.unsplash.com/bYuI23mnmDQ"/>
-        <img src="https://source.unsplash.com/Nllx4R-2c3o"/>
-        <img src="https://source.unsplash.com/lp40q07DIe0"/>
-        <img src="https://source.unsplash.com/wfalq01jJuU"/>
-        <img src="https://source.unsplash.com/rMHNK_skwwU"/>
-        <img src="https://source.unsplash.com/WBMjuGpbrCQ"/>
-        <img src="https://source.unsplash.com/nCUZ5BYBL_o"/>
-        <img src="https://source.unsplash.com/3u4fzMQZhjc"/>
-        <img src="https://source.unsplash.com/haOIqIPSwps"/>
-        <img src="https://source.unsplash.com/3UrYD7NNVxk"/>
-        <img src="https://source.unsplash.com/fm1JKDItlVM"/>
-        <img src="https://source.unsplash.com/qPpq1EVs8vw"/>
-        <img src="https://source.unsplash.com/xRyL63AwZFE"/>
-        <img src="https://source.unsplash.com/XeNKWTiCPNw"/>
-        <img src="https://source.unsplash.com/DFt3T5r_4FE"/>
-        <img src="https://source.unsplash.com/Ebwp2-6BG8E"/>
-            </div>
-             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-*/
