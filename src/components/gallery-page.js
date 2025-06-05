@@ -2,20 +2,19 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal/Fade"
 
-import HeroImage from "../images/3D-liquid-abstract-2.webp"
-
 const Gallery = () => {
   const data = useStaticQuery(graphql`
     query GalleryImagesQuery {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/gallery/" } }
-        sort: { frontmatter: { title: ASC } }
+        sort: { frontmatter: { date: DESC } } # Latest first
       ) {
         nodes {
           id
           frontmatter {
             title
             image
+            date(formatString: "YYYY-MM-DD")
           }
         }
       }
@@ -23,6 +22,7 @@ const Gallery = () => {
   `)
 
   const galleryItems = data.allMarkdownRemark.nodes
+  const latestItem = galleryItems[0] // first item = most recent due to DESC sort
 
   return (
     <div className="max-w-7xl mx-auto mt-10">
@@ -43,7 +43,13 @@ const Gallery = () => {
             </p>
           </div>
           <div className="rounded-xl w-auto h-full object-cover flex justify-center">
-            <img src={HeroImage} alt="HeroImage" />
+            {latestItem && (
+              <img
+                src={latestItem.frontmatter.image}
+                alt={latestItem.frontmatter.title}
+                className="rounded-xl max-h-80 object-cover"
+              />
+            )}
           </div>
         </div>
       </Fade>
