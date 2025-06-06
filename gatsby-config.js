@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `PILI MISSANA - Sober house foundation`,
     description: `Tuna toa tiba za maradhi ya uraibu wa madawa ya kulevya kama vile pombe, bangi, heroin, cocaine, tramadol, na dawa nyingine za kulevya`,
-    siteUrl: "https://holo-theme.netlify.app/",
+    siteUrl: "https://pilimissanasoberhouse.co.tz",
     author: `Said Abdulkadir <said.abdulkadiri@protonmail.com>`,
   },
   plugins: [
