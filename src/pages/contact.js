@@ -174,6 +174,7 @@ const Contact = () => {
   name="contact" 
   method="POST" 
   data-netlify="true" 
+  data-netlify-recaptcha="true" 
   netlify-honeypot="bot-field"
   action="/contact"
 >
