@@ -210,7 +210,8 @@ const Contact = () => {
       name="message"
     ></textarea>
   </label>
-
+   {/* 🔐 Netlify reCAPTCHA widget */}
+  <div className="mt-5" data-netlify-recaptcha="true"></div>
   <div>
     <Button
       type="submit"
