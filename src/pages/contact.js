@@ -156,29 +156,22 @@ const Contact = () => {
               </div>
             </div>
             {/* Hidden Netlify form for backend registration */}
-<form name="contact" netlify="true" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <input type="text" name="company" />
-  <input type="tel" name="phone" />
-  <textarea name="message"></textarea>
-</form>
+
 
 {/* Visible form users interact with */}
 
  {/* ...rest of your form fields */}
 
-
-            <form 
-  className="mt-5" 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  data-netlify-recaptcha="true" 
+    <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-recaptcha="true"
   netlify-honeypot="bot-field"
   action="/contact"
 >
   <input type="hidden" name="form-name" value="contact" />
+
   <p hidden>
     <label>
       Don’t fill this out: <input name="bot-field" />
@@ -187,10 +180,10 @@ const Contact = () => {
 
   <div className="flex xxs:flex-col sm:flex-row">
     <div className="sm:mr-5 xxs:mr-0">
-      <Input placeholder="Jina lako" type="text" name="name" />
+      <Input placeholder="Jina lako" type="text" name="name" required />
     </div>
     <div className="sm:ml-5 xxs:ml-0 xxs:mt-2 sm:mt-0">
-      <Input placeholder="Email yako" type="email" name="email" />
+      <Input placeholder="Email yako" type="email" name="email" required />
     </div>
   </div>
 
@@ -209,10 +202,13 @@ const Contact = () => {
       rows="5"
       placeholder="Tukusaidie eje?"
       name="message"
+      required
     ></textarea>
   </label>
-   {/* 🔐 Netlify reCAPTCHA widget */}
+
+  {/* reCAPTCHA */}
   <div className="mt-5" data-netlify-recaptcha="true"></div>
+
   <div>
     <Button
       type="submit"
@@ -222,6 +218,8 @@ const Contact = () => {
     />
   </div>
 </form>
+
+            
 
               
           </div>
