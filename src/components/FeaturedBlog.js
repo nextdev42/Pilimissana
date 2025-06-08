@@ -18,10 +18,11 @@ const FeaturedBlog = ({ posts }) => {
               const { title, date } = node.frontmatter
               const { slug } = node.fields
               const trimmed = node.rawMarkdownBody
+                .replace(/^#+\s+/gm, "") // Remove headings
+                .replace(/\*\*|__|[*_`~]/g, "") // Remove emphasis and inline styles
                 .split(/\s+/)
                 .slice(0, 38)
-                .join(" ") + "..."
-
+                .join(" ") + "..
               return (
                 <div
                   key={slug}
