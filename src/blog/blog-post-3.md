@@ -10,7 +10,7 @@ tags:
 description: Wengi wetu huenda tumesha sikia neno uraibu au labda ni mara ya kwanza unasikia neno hili, na unajiuliza uraibu ni nini? Kwenye makala haya tuta kwenda kuangalia maana ya uraibu kiu ndani.
 ---
 
-Wengi wetu huenda tumesha sikia neno uraibu au labda ni mara ya kwanza unasikia neno hili, na unajiuliza uraibu ni nini? Kwenye makala haya tuta kwenda kuangalia maana ya uraibu kiu ndani.
+Wengi wetu huenda tumesha sikia neno uraibu au labda ni mara ya kwanza unasikia neno hili, na unajiuliza uraibu ni nini? Kwenye makala haya tuta kwenda kuangalia maana ya uraibu kwa kina. Kwani
 
 
 
