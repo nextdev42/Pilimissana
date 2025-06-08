@@ -237,7 +237,7 @@ const FeatureSection = () => {
           <div className="rounded-xl overflow-hidden relative hover:opacity-100 flex justify-center">
             <img alt="Image" src={Image2} />
           </div>
-          <div className="rounded-xl overflow-hidden relative hover:opacity-100 hidden lg:block ">
+          <div className="rounded-xl overflow-hidden relative hover:opacity-50 flex justify-center">
             <img alt="Image" src={Image3} />
           </div>
         </div>
