@@ -33,70 +33,67 @@ const StyledDiv = styled.div`
   }
 `
 
-const BlogPost = props => {
-  const { pageContext } = props
-  const nextSlug = pageContext.next ? pageContext.next.fields.slug : "/"
-  const previousSlug = pageContext.previous
-    ? pageContext.previous.fields.slug
-    : "/"
+const BlogPost = ({ data, pageContext }) => {
+  const post = data.markdownRemark
+  const { featuredimage, featuredimage_local, title, date } = post.frontmatter
+
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  })
+
+  const titleDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  })
+
+  const isoDate = new Date(date).toISOString().split("T")[0]
+
+  const nextSlug = pageContext.next?.fields.slug || "/"
+  const previousSlug = pageContext.previous?.fields.slug || "/"
+
   const nextLinkStatus =
     pageContext.next?.frontmatter.templateKey === "blog-post"
   const previousLinkStatus =
     pageContext.previous?.frontmatter.templateKey === "blog-post"
 
-  const post = props.data.markdownRemark
-  const date = new Date(post.frontmatter.date)
-  const formattedDate = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  })
-  const titlaDate = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  })
-  const isoDate = date.toISOString().split("T")[0]
-
-  const { featuredimage, featuredimage_local } = post.frontmatter
-
-
   return (
     <Layout>
       <Seo
         title="Blog"
-        description="We have been providing professional repair services in the city since 1993 ,and we have helped thousands of local car owners to restore their vehicles."
+        description="We have been providing professional repair services in the city since 1993, and we have helped thousands of local car owners to restore their vehicles."
       />
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#000000] lg:mb-6 lg:text-4xl dark:text-black">
-                {post.frontmatter.title}
+                {title}
               </h1>
             </header>
 
             {(featuredimage_local?.childImageSharp || featuredimage) && (
-        <div className="post-content-image">
-       {featuredimage_local?.childImageSharp ? (
-      <GatsbyImage
-        image={getImage(featuredimage_local)}
-        className="lg:mb-2 overflow-hidden rounded-xl"
-        alt={post.frontmatter.title}
-      />
-    ) : (
-      <img
-        src={featuredimage}
-        alt={post.frontmatter.title}
-        className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
-      />
-    )}
-  </div>
-)}
-
+              <div className="post-content-image">
+                {featuredimage_local?.childImageSharp ? (
+                  <GatsbyImage
+                    image={getImage(featuredimage_local)}
+                    className="lg:mb-2 overflow-hidden rounded-xl"
+                    alt={title}
+                  />
+                ) : (
+                  <img
+                    src={featuredimage}
+                    alt={title}
+                    className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+                  />
+                )}
+              </div>
+            )}
 
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
-              <time dateTime={isoDate} title={titlaDate}>
+              <time dateTime={isoDate} title={titleDate}>
                 {formattedDate}
               </time>
             </p>
@@ -109,13 +106,13 @@ const BlogPost = props => {
             <div className="flex items-center justify-between pt-8">
               <div>
                 <a
+                  href={previousSlug}
+                  className="text-base"
                   style={{
                     display: previousLinkStatus ? "flex" : "none",
                     alignItems: "center",
                     color: "#131313",
                   }}
-                  className="text-base"
-                  href={previousSlug}
                 >
                   <img src={LeftIcon} alt="Previous" width={30} height={30} />
                   <span>
@@ -127,13 +124,13 @@ const BlogPost = props => {
               </div>
               <div>
                 <a
+                  href={nextSlug}
+                  className="text-base"
                   style={{
                     display: nextLinkStatus ? "flex" : "none",
                     alignItems: "center",
                     color: "#131313",
                   }}
-                  className="text-base"
-                  href={nextSlug}
                 >
                   <span>
                     {pageContext.next?.frontmatter.title.length > 30
@@ -177,4 +174,6 @@ export const pageQuery = graphql`
     }
   }
 `
+---
 
+Let me know if you'd like support for fallback alt text, responsive tweaks, or metadata enhancements.
