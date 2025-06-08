@@ -22,7 +22,7 @@ const FeaturedBlog = ({ posts }) => {
                 .replace(/\*\*|__|[*_`~]/g, "") // Remove emphasis and inline styles
                 .split(/\s+/)
                 .slice(0, 38)
-                .join(" ") + "..
+                .join(" ") + "..."
               return (
                 <div
                   key={slug}
