@@ -174,6 +174,3 @@ export const pageQuery = graphql`
     }
   }
 `
----
-
-Let me know if you'd like support for fallback alt text, responsive tweaks, or metadata enhancements.
