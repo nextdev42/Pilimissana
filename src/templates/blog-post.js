@@ -32,34 +32,33 @@ const StyledDiv = styled.div`
     color: #6b46c1;
   }
 `
+
 const BlogPost = props => {
   const { pageContext } = props
   const nextSlug = pageContext.next ? pageContext.next.fields.slug : "/"
   const previousSlug = pageContext.previous
     ? pageContext.previous.fields.slug
     : "/"
-  const nextLinkStatus = pageContext.next
-    ? pageContext.next.frontmatter.templateKey === "blog-post"
-      ? true
-      : false
-    : false
-  const previousLinkStatus = pageContext.previous
-    ? pageContext.previous.frontmatter.templateKey === "blog-post"
-      ? true
-      : false
-    : false
+  const nextLinkStatus =
+    pageContext.next?.frontmatter.templateKey === "blog-post"
+  const previousLinkStatus =
+    pageContext.previous?.frontmatter.templateKey === "blog-post"
 
   const post = props.data.markdownRemark
-  let date = new Date(post.frontmatter.date) // assuming post.frontmatter.date is in ISO string format
-  let options = { year: "numeric", month: "short", day: "numeric" }
-  let formattedDate = date.toLocaleDateString("en-US", options)
-  let titlaDate = date.toLocaleDateString("en-US", {
+  const date = new Date(post.frontmatter.date)
+  const formattedDate = date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  })
+  const titlaDate = date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   })
+  const isoDate = date.toISOString().split("T")[0]
 
-  let isoDate = date.toISOString().split("T")[0] // get the date part of the ISO string
+  const featuredImage = post.frontmatter.featuredimage
 
   return (
     <Layout>
@@ -68,50 +67,38 @@ const BlogPost = props => {
         description="We have been providing professional repair services in the city since 1993 ,and we have helped thousands of local car owners to restore their vehicles."
       />
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-        <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
+        <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#000000] lg:mb-6 lg:text-4xl dark:text-black">
                 {post.frontmatter.title}
               </h1>
             </header>
-            {post.frontmatter.featuredimage && (
-  <div className="post-content-image">
-    {post.frontmatter.featuredimage.childImageSharp ? (
-      // Local image
-      <GatsbyImage
-        image={getImage(post.frontmatter.featuredimage)}
-        className="lg:mb-2 overflow-hidden rounded-xl"
-        alt={post.frontmatter.title}
-      />
-    ) : typeof post.frontmatter.featuredimage === "string" ? (
-      // External image URL
-      <img
-        src={post.frontmatter.featuredimage}
-        alt={post.frontmatter.title}
-        className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
-      />
-    ) : null}
-  </div>
-)}
 
-
-    <img
-      src={post.frontmatter.featuredimage}
-      alt={post.frontmatter.title}
-      className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
-    />
-  ))}
-
-    <img
-      src={post.frontmatter.featuredimage}
-      alt={post.frontmatter.title}
-      className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
-    />
-  ))}
-
+            {featuredImage && (
+              <div className="post-content-image">
+                {"childImageSharp" in featuredImage ? (
+                  <GatsbyImage
+                    image={getImage(featuredImage)}
+                    className="lg:mb-2 overflow-hidden rounded-xl"
+                    alt={post.frontmatter.title}
+                  />
+                ) : typeof featuredImage === "string" ? (
+                  <img
+                    src={featuredImage}
+                    alt={post.frontmatter.title}
+                    className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+                  />
+                ) : featuredImage?.publicURL ? (
+                  <img
+                    src={featuredImage.publicURL}
+                    alt={post.frontmatter.title}
+                    className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+                  />
+                ) : null}
               </div>
             )}
+
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
               <time dateTime={isoDate} title={titlaDate}>
                 {formattedDate}
@@ -122,6 +109,7 @@ const BlogPost = props => {
               className="post-content-body text-[#000000]"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
+
             <div className="flex items-center justify-between pt-8">
               <div>
                 <a
@@ -130,17 +118,14 @@ const BlogPost = props => {
                     alignItems: "center",
                     color: "#131313",
                   }}
-                  className="text-base	"
+                  className="text-base"
                   href={previousSlug}
                 >
-                  <img src={LeftIcon} alt="LeftIcon" width={30} height={30} />
+                  <img src={LeftIcon} alt="Previous" width={30} height={30} />
                   <span>
-                    {pageContext.previous
-                      ? pageContext.previous.frontmatter.title?.length > 30
-                        ? pageContext.previous.frontmatter.title.slice(0, 30) +
-                          "..."
-                        : pageContext.previous.frontmatter.title
-                      : ""}
+                    {pageContext.previous?.frontmatter.title.length > 30
+                      ? pageContext.previous.frontmatter.title.slice(0, 30) + "..."
+                      : pageContext.previous?.frontmatter.title}
                   </span>
                 </a>
               </div>
@@ -151,18 +136,15 @@ const BlogPost = props => {
                     alignItems: "center",
                     color: "#131313",
                   }}
-                  className="text-base	"
+                  className="text-base"
                   href={nextSlug}
                 >
                   <span>
-                    {pageContext.next
-                      ? pageContext?.next?.frontmatter?.title?.length > 30
-                        ? pageContext?.next?.frontmatter?.title?.slice(0, 30) +
-                          "..."
-                        : pageContext?.next?.frontmatter?.title
-                      : ""}
+                    {pageContext.next?.frontmatter.title.length > 30
+                      ? pageContext.next.frontmatter.title.slice(0, 30) + "..."
+                      : pageContext.next?.frontmatter.title}
                   </span>
-                  <img src={RightIcon} alt="RightIcon" width={30} height={30} />
+                  <img src={RightIcon} alt="Next" width={30} height={30} />
                 </a>
               </div>
             </div>
@@ -187,7 +169,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         description
         featuredimage {
           childImageSharp {
