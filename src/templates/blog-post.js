@@ -58,7 +58,8 @@ const BlogPost = props => {
   })
   const isoDate = date.toISOString().split("T")[0]
 
-  const featuredImage = post.frontmatter.featuredimage
+  const { featuredimage, featuredimage_local } = post.frontmatter
+
 
   return (
     <Layout>
@@ -75,29 +76,24 @@ const BlogPost = props => {
               </h1>
             </header>
 
-            {featuredImage && (
-              <div className="post-content-image">
-                {"childImageSharp" in featuredImage ? (
-                  <GatsbyImage
-                    image={getImage(featuredImage)}
-                    className="lg:mb-2 overflow-hidden rounded-xl"
-                    alt={post.frontmatter.title}
-                  />
-                ) : typeof featuredImage === "string" ? (
-                  <img
-                    src={featuredImage}
-                    alt={post.frontmatter.title}
-                    className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
-                  />
-                ) : featuredImage?.publicURL ? (
-                  <img
-                    src={featuredImage.publicURL}
-                    alt={post.frontmatter.title}
-                    className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
-                  />
-                ) : null}
-              </div>
-            )}
+            {(featuredimage_local?.childImageSharp || featuredimage) && (
+        <div className="post-content-image">
+       {featuredimage_local?.childImageSharp ? (
+      <GatsbyImage
+        image={getImage(featuredimage_local)}
+        className="lg:mb-2 overflow-hidden rounded-xl"
+        alt={post.frontmatter.title}
+      />
+    ) : (
+      <img
+        src={featuredimage}
+        alt={post.frontmatter.title}
+        className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+      />
+    )}
+  </div>
+)}
+
 
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
               <time dateTime={isoDate} title={titlaDate}>
@@ -171,13 +167,14 @@ export const pageQuery = graphql`
         title
         date
         description
-        featuredimage {
+        featuredimage
+        featuredimage_local {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
-          publicURL
         }
       }
     }
   }
 `
+
