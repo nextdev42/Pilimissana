@@ -18,11 +18,13 @@ const FeaturedBlog = ({ posts }) => {
               const { title, date } = node.frontmatter
               const { slug } = node.fields
               const trimmed = node.rawMarkdownBody
-                .replace(/^#+\s+/gm, "") // Remove headings
-                .replace(/\*\*|__|[*_`~]/g, "") // Remove emphasis and inline styles
-                .split(/\s+/)
-                .slice(0, 38)
-                .join(" ") + "..."
+               .split("\n") // Split by line
+               .filter(line => !/^#+\s/.test(line)) // Remove headings like ## Heading
+               .join(" ") // Join remaining lines
+               .replace(/\*\*|__|[*_`~]/g, "") // Remove inline Markdown
+               .split(/\s+/) // Split into words
+               .slice(0, 38) // Limit to 38 words
+               .join(" ") + "..."
               return (
                 <div
                   key={slug}
