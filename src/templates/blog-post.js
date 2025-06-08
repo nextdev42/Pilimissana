@@ -76,15 +76,26 @@ const BlogPost = props => {
               </h1>
             </header>
             {post.frontmatter.featuredimage && (
-              <div className="post-content-image">
-            {post.frontmatter.featuredimage &&
-        (post.frontmatter.featuredimage.childImageSharp ? (
-    <GatsbyImage
-      image={getImage(post.frontmatter.featuredimage)}
-      className="lg:mb-2 overflow-hidden rounded-xl"
-      alt={post.frontmatter.title}
-    />
-  ) : (
+  <div className="post-content-image">
+    {post.frontmatter.featuredimage.childImageSharp ? (
+      // Local image
+      <GatsbyImage
+        image={getImage(post.frontmatter.featuredimage)}
+        className="lg:mb-2 overflow-hidden rounded-xl"
+        alt={post.frontmatter.title}
+      />
+    ) : typeof post.frontmatter.featuredimage === "string" ? (
+      // External image URL
+      <img
+        src={post.frontmatter.featuredimage}
+        alt={post.frontmatter.title}
+        className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+      />
+    ) : null}
+  </div>
+)}
+
+
     <img
       src={post.frontmatter.featuredimage}
       alt={post.frontmatter.title}
@@ -182,6 +193,7 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
+          publicURL
         }
       }
     }
