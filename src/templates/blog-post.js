@@ -77,11 +77,28 @@ const BlogPost = props => {
             </header>
             {post.frontmatter.featuredimage && (
               <div className="post-content-image">
-                <GatsbyImage
-                  image={getImage(post.frontmatter.featuredimage)}
-                  className="lg:mb-2 overflow-hidden rounded-xl"
-                  alt={post.frontmatter.title}
-                />
+            {post.frontmatter.featuredimage &&
+        (post.frontmatter.featuredimage.childImageSharp ? (
+    <GatsbyImage
+      image={getImage(post.frontmatter.featuredimage)}
+      className="lg:mb-2 overflow-hidden rounded-xl"
+      alt={post.frontmatter.title}
+    />
+  ) : (
+    <img
+      src={post.frontmatter.featuredimage}
+      alt={post.frontmatter.title}
+      className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+    />
+  ))}
+
+    <img
+      src={post.frontmatter.featuredimage}
+      alt={post.frontmatter.title}
+      className="lg:mb-2 overflow-hidden rounded-xl w-full object-cover"
+    />
+  ))}
+
               </div>
             )}
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
