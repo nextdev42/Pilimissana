@@ -19,7 +19,7 @@ const FeaturedBlog = ({ posts }) => {
               const { slug } = node.fields
               const trimmed = node.rawMarkdownBody
                 .split(/\s+/)
-                .slice(0, 45)
+                .slice(0, 38)
                 .join(" ") + "..."
 
               return (
