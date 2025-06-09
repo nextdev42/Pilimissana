@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import HeroImage from "../../images/Polish_20250602_155142242.jpg";
 import Image1 from "../../images/Polish_20250602_152434075.jpg";
 import Image2 from "../../images/Polish_20250602_160038191.jpg";
-import Image3 from "../../images/3D-liquid-abstract-3.webp";
+import Image3 from "../../images/Polish_20250609_182008865.jpg";
 
 const FeatureSection = () => {
   return (
