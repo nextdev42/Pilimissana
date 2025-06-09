@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Uraibu ni nini? 
 date: 2025-06-08T15:47:18.616Z
-featuredimage: /img/Holographic-Liquid-1.jpg
+featuredimage: /img/myriam-zilles-KltoLK6Mk-g-unsplash.jpg
 categories:
   - blog
 tags:
