@@ -49,7 +49,7 @@ const BlogsContainer = ({ data }) => {
           KUPATA MAKALA YETU
         </h2>
         <h3 className="text-lg mt-2 opacity-60 text-black text-center">
-          Subscribe kwenye newsletter, tuta kutumia vitu vizuri tu!
+          Jiunge kwenye newsletter, tuta kutumia vitu vizuri tu!
         </h3>
 
         <form
@@ -72,7 +72,7 @@ const BlogsContainer = ({ data }) => {
             type="submit"
             className="transition-all duration-500 ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-black hover:text-white rounded-lg border border-purple hover:bg-purple"
           >
-            kwenye orotha
+            Jiunge
           </button>
         </form>
       </div>
