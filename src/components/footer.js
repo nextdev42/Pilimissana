@@ -41,8 +41,8 @@ const Footer = () => {
                   >
                     <img
                       className="w-5 h-5 mt-1"
-                      src="/img/Github-Logo.png"
-                      alt="GitHub"
+                      src="/img/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
+                      alt="Instagram"
                     ></img>
                   </a>
                 </p>
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="place-self-end self-center xxs:hidden lg:block">
               <ul className="text-xl font-montserrat font-medium">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">Nyumbani</Link>
                 </li>
                 <li>
                   <Link to="/about">Kuhusu Sisi</Link>
