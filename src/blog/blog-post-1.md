@@ -2,14 +2,16 @@
 templateKey: blog-post
 title: Chanzo cha uraibu 
 date: 2025-07-08T19:15:18.616Z
-featuredimage: "" 
+featuredimage: ""
 categories:
   - blog
 tags:
   - blog
-description: Chanzo anzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
-Sababu kuu za uraibu ni pamoja na mshtuko wa kihisia (trauma), matatizo ya afya ya akili, na kurithi tabia fulani kutoka kwa wazazi (vinasaba). Hata hivyo, ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu.
+description: >-
+  Chanzo anzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
+  Sababu kuu za uraibu ni pamoja na mshtuko wa kihisia (trauma), matatizo ya afya ya akili, na kurithi tabia fulani kutoka kwa wazazi (vinasaba). Hata hivyo, ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu.
 ---
+
 
 ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
 Sababu kuu za uraibu ni pamoja na mshtuko wa kihisia (trauma), matatizo ya afya ya akili, na kurithi tabia fulani kutoka kwa wazazi (vinasaba). Hata hivyo, ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu.
