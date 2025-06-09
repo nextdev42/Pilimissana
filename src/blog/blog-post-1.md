@@ -16,7 +16,7 @@ Sababu kuu za uraibu ni pamoja na mshtuko wa kihisia (trauma), matatizo ya afya 
 ![Mizizi ya uraibu](/img/IMG-20250606-WA0287.jpg) 
 Mizizi ya mti inaelezwa kuwa ni "The Underlying Damage of Shame, Wounding and Division within the Individual", yaani:
 
-> Aibu ya ndani, majeraha ya kihisia, na mgawanyiko wa nafsi ya mtu
+*Aibu ya ndani, majeraha ya kihisia, na mgawanyiko wa nafsi ya mtu*
 
 **Maana yake:**
 
