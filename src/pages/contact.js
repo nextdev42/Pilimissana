@@ -60,7 +60,7 @@ const Contact = () => {
                         Simu
                       </p>
                       <p className="text-neutral-500 mb-2">
-                        <a href="tel:+#">(+255) 715744464</a>
+                        <a href="tel:+255715744464">(+255) 715744464</a>
                       </p>
                     </div>
                   </div>
