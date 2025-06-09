@@ -90,8 +90,8 @@ const Contact = () => {
                         Email
                       </p>
                       <p className="text-neutral-500 mb-2">
-                        <a href="mailto:hello@holo.com?subject=Wasiliana nasi kwa msaada zaidi.">
-                          hello@holo.com
+                        <a href="mailto:pili.missana@pilimissanasoberhouse.co.tz?subject=Wasiliana nasi kwa msaada zaidi.">
+                         pili.missana@pilimissanasoberhouse.co.tz 
                         </a>
                       </p>
                     </div>
