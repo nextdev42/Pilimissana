@@ -8,7 +8,7 @@ categories:
 tags:
   - blog
 description: >-
-  Chanzo anzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
+  Ni muhimu kufaham kwamba hakuna chanzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
   
 ---
 
