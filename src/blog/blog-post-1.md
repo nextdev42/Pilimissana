@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Chanzo cha uraibu 
 date: 2025-07-08T19:15:18.616Z
-featuredimage: ""
+featuredimage: "/img/"
 categories:
   - blog
 tags:
