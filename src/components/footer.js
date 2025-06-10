@@ -45,6 +45,16 @@ const Footer = () => {
                       alt="Instagram"
                     ></img>
                   </a>
+                    <a
+                    href="https://github.com/lilxyzz/holo-theme"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-5 h-5 mt-1"
+                      src="/img/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
+                      alt="Instagram"
+                    ></img>
+                  </a>    
                 </p>
               </div>
             </div>
