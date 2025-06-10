@@ -63,7 +63,7 @@ const Footer = () => {
                   >
                     <img
                       className="w-5 h-5 mt-1"
-                      src="/img/vecteezy_facebook-logo-png-facebook-icon-transparent-white-background_41643208.png"
+                      src="/img/3146788_youtube_logo_icon.png"
                       alt="YouTube"
                     ></img>
                   </a>        
