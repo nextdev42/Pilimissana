@@ -4,6 +4,7 @@ import Button from "../Atoms/button"
 import Fade from "react-reveal/Fade"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { marked } from "marked"
 
 const BlogsContainer = ({ data }) => {
   const posts = data?.map(item => ({
@@ -36,7 +37,14 @@ const BlogsContainer = ({ data }) => {
                 <Link to={blog.slug} style={{ textDecoration: "none", color: "black" }}>
                   <h1 className="text-2xl font-semibold mt-2 mb-4">{blog.title}</h1>
                 </Link>
-                <p className="text-sm opacity-50 mt-2">{blog.description}</p>
+
+                {/* Render Markdown in description */}
+                <p
+                  className="text-sm opacity-50 mt-2"
+                  dangerouslySetInnerHTML={{
+                    __html: marked.parse(blog.description || ""),
+                  }}
+                />
               </div>
             </div>
           ))}
@@ -64,7 +72,7 @@ const BlogsContainer = ({ data }) => {
             type="email"
             name="email"
             required
-            placeholder="weak Email yako"
+            placeholder="Weka Email yako"
             className="text-black p-2 rounded mb-4"
           />
 
