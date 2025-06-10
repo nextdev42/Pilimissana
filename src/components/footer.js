@@ -38,7 +38,7 @@ const Footer = () => {
                   </p>
                   <div className="flex gap-3 mt-2">
                   <a
-                    href="https://github.com/lilxyzz/holo-theme"
+                    href="https://www.instagram.com/pillimissanah_sober_house?igsh=dnQ2cGZ0Yzc5dWxw"
                     target="_blank"
                   >
                     <img
@@ -48,7 +48,7 @@ const Footer = () => {
                     ></img>
                   </a>
                     <a
-                    href="https://github.com/lilxyzz/holo-theme"
+                    href="https://www.facebook.com/share/16TDxGCNeM/"
                     target="_blank"
                   >
                     <img
