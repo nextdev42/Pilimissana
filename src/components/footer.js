@@ -56,7 +56,18 @@ const Footer = () => {
                       src="/img/vecteezy_facebook-logo-png-facebook-icon-transparent-white-background_41643208.png"
                       alt="Facebook"
                     ></img>
-                  </a>    
+                  </a>
+                    <a
+                    href="https://m.youtube.com/channel/UCNTQZkF8taHOpV6FyPRDzOA?fbclid=PAY2xjawK0vfhleHRuA2FlbQIxMAABpy68FK1cMm3XSzqF1l3ryK9QvIkw-MEkcYUo2Ke8Q1XY_4wTw5lkElctvYgC_aem_o7cvPuYt75m0-WBd-9xcXA"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-5 h-5 mt-1"
+                      src="/img/vecteezy_facebook-logo-png-facebook-icon-transparent-white-background_41643208.png"
+                      alt="YouTube"
+                    ></img>
+                  </a>        
+                        
                 </div>
               </div>
             </div>
