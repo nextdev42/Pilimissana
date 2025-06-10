@@ -31,7 +31,7 @@ const Footer = () => {
                   <a
                     className="text-black font-semibold ml-1"
                     target="_blank"
-                    href="https://travislord.xyz"
+                    href="https://pilimissanasoberhouse.co.tz"
                   >
                     +255715744464
                   </a>
