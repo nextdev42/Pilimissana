@@ -53,8 +53,8 @@ const Footer = () => {
                   >
                     <img
                       className="w-5 h-5 mt-1"
-                      src="/img/vecteezy_instagram-logo-png-instagram-icon-transparent_18930415.png"
-                      alt="Instagram"
+                      src="/img/vecteezy_facebook-logo-png-facebook-icon-transparent-white-background_41643208.png"
+                      alt="Facebook"
                     ></img>
                   </a>    
                 </div>
