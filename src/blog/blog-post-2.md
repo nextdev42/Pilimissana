@@ -29,17 +29,17 @@ Moja ya maswali ambayo unaweza kujiuliza ni je inawezekana kwa mtu binafsi kujip
 
 Takimu zinaonyesha katika hali mbaya kabisa, mtumiaji hujaribu kuacha dawa peke yake na ama huathirika na matatizo ya kiafya au hujirudia kutumia tena muda mfupi baadaye; hali hii husababisha mzunguko mzima kuanza upya. Moja ya njia bora zaidi za kuvunja mzunguko huo kabisa ni kupitia **matibabu**.
 
-##Mchakato wa Kuondoa Sumu Mwilini (Detoxification)
+## Mchakato wa Kuondoa Sumu Mwilini (Detoxification)
 
 Kila mtu ana mahitaji tofauti ya kuondoa sumu mwilini. Mchakato wa detox huusaidia watu waliopatwa na uraibu kupata matibabu ya kibinafsi. Katika hali nyingi, mchakato huu unahusisha hatua tatu:
 
-##Tathmini
+## Tathmini
 
 Timu ya matibabu huwapima wagonjwa wanaowasili kwa ajili ya matatizo ya kiafya na afya ya akili. Madaktari hutumia vipimo vya damu kupima kiwango cha dawa za kulevya kilichopo kwenye mfumo wa mwili wa mgonjwa. Hii husaidia kubaini kiwango cha dawa za matibabu kinachohitajika.
 
 Pia kuna mapitio ya kina ya historia ya matumizi ya dawa za kulevya, historia ya matibabu na hali ya afya ya akili. Taarifa hii huunda msingi wa mpango wa matibabu wa muda mrefu wa mgonjwa.
 
-##Utulivu (Stabilization)
+## Utulivu (Stabilization)
 
 Hatua inayofuata ni kumuweka mgonjwa katika hali ya utulivu kwa kutumia tiba ya kitabibu na kisaikolojia. Lengo la hatua hii ni kuzuia madhara yoyote kwa mgonjwa. Madaktari wanaweza kuandikia dawa za kutibu uraibu ili kuzuia matatizo ya kiafya na kupunguza dalili za kuacha matumizi.
 
