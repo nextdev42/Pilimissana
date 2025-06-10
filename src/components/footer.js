@@ -35,6 +35,8 @@ const Footer = () => {
                   >
                     +255715744464
                   </a>
+                  </p>
+                  <div className="flex gap-3 mt-2">
                   <a
                     href="https://github.com/lilxyzz/holo-theme"
                     target="_blank"
@@ -55,7 +57,7 @@ const Footer = () => {
                       alt="Instagram"
                     ></img>
                   </a>    
-                </p>
+                </div>
               </div>
             </div>
 
