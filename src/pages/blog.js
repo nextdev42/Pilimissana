@@ -13,8 +13,8 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Holo - Blog"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        title="Pilimissana - Blog"
+        description="Makala za uraibu zilizo andaliwa na wataalamu wetu kwa lengo la ku elimisha na kuwasaidia jamii juu ya maradhi ya uraibu"
       ></Seo>
       <BlogHeader post={HeaderPost} />
       <BlogsContainer data={otherPosts} />
