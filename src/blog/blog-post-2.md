@@ -1,16 +1,13 @@
 ---
 templateKey: blog-post
-title: Lorem Ipsum Is Simply Dummy Text
-date: 2024-03-30T15:02:06.069Z
-featuredimage: /img/Holographic-Liquid-2.jpg
+title: Detoxification ni nini? 
+date: 2025-06-10T17:55:06.069Z
+featuredimage: /img/alina-karpenko-jH1PBHevj38-unsplash.jpg
 categories:
   - blog
 tags:
   - blog
-description: Lorem Ipsum is simply dummy text of the printing and typesetting
-  industry. Lorem Ipsum has been the industry's standard dummy text ever since
-  the 1500s, when an unknown printer took a galley of type and scrambled it to
-  make a type specimen book.
+description: Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo pombe** kujipiga *ndonga* **kujiweka Mbali na dawa za kulevya pamoja na vyanzo vyote vya dawa za kulevya** kwa lengo la ku ruhusu mwili wake utoe sumu ya dawa za kulevya alizo kuwa akitumia.
 ---
 ## Lorem Ipsum 
 
