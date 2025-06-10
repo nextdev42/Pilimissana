@@ -12,10 +12,11 @@ description: Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo 
 
 Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo pombe** kujipiga *ndonga* **kujiweka Mbali na dawa za kulevya pamoja na vyanzo vyote vya dawa za kulevya** kwa lengo la ku ruhusu mwili wake utoe sumu ya dawa za kulevya alizo kuwa akitumia.
 
-ikiwemo ni pamoja na kudhibiti kwa usalama dalili za kuacha matumizi ya dawa za kulevya, Kila mtu hupitia uzoefu tofauti wakati wa kuacha matumizi ya dawa za kulevya. Aina ya dawa na muda uliotumika huathiri jinsi mchakato wa kuacha utavyokuwa.
+Ikiwemo pamoja na kudhibiti kwa usalama dalili za kuacha matumizi ya dawa za kulevya, Kila mtu hupitia uzoefu tofauti wakati wa kuacha matumizi ya dawa za kulevya. Aina ya dawa na muda uliotumika huathiri jinsi mchakato wa kuacha utavyokuwa.
 
 
 Dawa zinazotumika wakati wa kuondoa sumu mwilini **detox** husaidia kuwafanya waliokuwa watumiaji waendelee kujisikia vizuri wakati dawa za kulevya zinapotolewa mwilini mwao.
+
 Inaweza kuchukua siku au hata miezi kuondokana na dalili za kuacha kutumia dawa za kulevya kwa dawa nyingi. 
 
 Muda wa dalili za kuondoa utegemezi unategemea mambo kadhaa, ikiwemo:
@@ -25,7 +26,7 @@ Hata hivyo, takribani katika kila kesi, muda unaochukua kuondoa vitu hatari mwil
 
 Matibabu yanaweza kuwasaidia wale wanaokabiliana na matumizi mabaya ya dawa za kulevya au pombe si tu kupita katika hatua ya kuondoa sumu mwilini **detox**  kwa haraka na kwa faraja kadri iwezekanavyo, bali pia kupata mbinu mpya za kukabiliana ambazo zitawawezesha kuvumilia dalili zozote za kiakili au kimwili za kuachana na matumizi ambazo zinaweza kutokea baadae ili wa sije kurejea tena kwenye matumizi **relapse**
 
-Moja ya maswali ambayo unaweza kujiuliza ni je inawezekana kwa mtu binafsi kujipiga ndonga **detox**. 
+Moja ya maswali ambayo unaweza kujiuliza ni je inawezekana kwa mtu binafsi kujipiga *ndonga* **detox**. 
 
 Takimu zinaonyesha katika hali mbaya kabisa, mtumiaji hujaribu kuacha dawa peke yake na ama huathirika na matatizo ya kiafya au hujirudia kutumia tena muda mfupi baadaye; hali hii husababisha mzunguko mzima kuanza upya. Moja ya njia bora zaidi za kuvunja mzunguko huo kabisa ni kupitia **matibabu**.
 
@@ -68,6 +69,7 @@ Ingawa detox ya kitabibu hupunguza dalili za kuacha matumizi, baadhi ya dalili h
 **Usingizi hafifu**
 
 **Ugumu wa kuzingatia**
+
 ## Detox Kulingana na Aina ya Dawa
 
 Detox huwa ngumu zaidi kwa baadhi ya watu kutegemeana na aina ya dawa walizotumia. Kulingana na dawa, dalili za kuacha matumizi zinaweza kuwa za **kimwili** zaidi au za **kisaikolojia**.
