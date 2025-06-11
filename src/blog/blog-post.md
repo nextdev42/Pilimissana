@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: Lorem Ipsum Is Simply Dummy Text
+title: Jinsi ya kudhibiti kurejea kwenye uraibu "Relapse" 
 date: 2024-03-30T15:02:06.069Z
-featuredimage: /img/Holographic-Liquid-3.jpg
+featuredimage: /img/Polish_20250611_185715973.jpg
 categories:
   - blog
 tags:
