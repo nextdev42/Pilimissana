@@ -7,12 +7,15 @@ categories:
   - blog
 tags:
   - blog
-description: Kuzuia kurudia matumizi ni sehemu muhimu ya mchakato wa kupona kutokana na uraibu. Kurudia mara kwa mara kunaweza kuwazuia watu kusonga mbele katika kushinda uraibu wao. Ingawa kuna maarifa machache kuhusu jinsi ubongo unavyofanya kazi wakati wa kupona kutoka kwenye uraibu, inaaminika kuwa kujiepusha na matumizi kwa muda mrefu kunaweza kuupa ubongo muda wa kurejea katika hali ya kawaida, hali ambayo inaweza kuweka msingi wa mafanikio ya muda mrefu.
+description: Kuzuia kurudia matumizi ni sehemu muhimu ya mchakato wa kupona kutokana na uraibu. Kurudia mara kwa mara kunaweza kuwazuia watu kusonga mbele katika kushinda uraibu wao.
 ---
+Ingawa kuna maarifa machache kuhusu jinsi ubongo unavyofanya kazi wakati wa kupona kutoka kwenye uraibu, inaaminika kuwa kujiepusha na matumizi kwa muda mrefu kunaweza kuupa ubongo muda wa kurejea katika hali ya kawaida, hali ambayo inaweza kuweka msingi wa mafanikio ya muda mrefu.
+
+
 Baadhi ya wagonjwa walio katika hatua za awali za kupona hujijengea matarajio yasiyo ya kweli, kwa kuamini kuwa hawatawahi tena kufikiria kutumia au kurudia matumizi. Watoa huduma wanapaswa kusisitiza kuwa mawazo ya mara kwa mara kuhusu kutumia au matamanio ni sehemu ya kawaida ya mchakato wa kupona, ili waweze kuwasaidia wagonjwa kujifunza stadi muhimu za kukabiliana na changamoto hizi.
 
 
-Kurudia Kimwili
+## Kurudia Kimwili
 
 Hatua ya mwisho ya kurudia matumizi hutokea pale mtu anaporejelea matumizi ya kilevi au dawa. Watafiti wengine hutofautisha kati ya “kupotoka” **matumizi ya awali mara moja** na “kurudia matumizi” **matumizi yasiyodhibitika ya mara kwa mara**. Hata hivyo, tofauti hii inaweza kuwa na madhara kwa baadhi ya watu kwa sababu inaweza kuwasaidia kupuuza athari za kupotoka. Kama vigezo vya DSM vinavyoeleza wazi, watu wengi wenye matatizo ya matumizi ya dawa au vilevi hupata ugumu wa kudhibiti kiasi wanachotumia, hali ambayo huongeza uwezekano kwamba kinywaji kimoja tu, kwa mfano, kitaendelea kuwa vingi zaidi iwapo hali haitarekebishwa. Vilevile, kupotoka mara ya kwanza kunaweza kuchochea hamu kubwa ya kutumia zaidi.
 
