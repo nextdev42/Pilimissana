@@ -11,8 +11,8 @@ description: Kuzuia kurudia matumizi ni sehemu muhimu ya mchakato wa kupona kuto
 ---
 Ingawa kuna maarifa machache kuhusu jinsi ubongo unavyofanya kazi wakati wa kupona kutoka kwenye uraibu, inaaminika kuwa kujiepusha na matumizi kwa muda mrefu kunaweza kuupa ubongo muda wa kurejea katika hali ya kawaida, hali ambayo inaweza kuweka msingi wa mafanikio ya muda mrefu.
 
+Watoa huduma wamekuwa wakitambua kwa muda mrefu kuwa kurudia matumizi si tukio moja bali ni mchakato. Baadhi ya programu za kuzuia kurudia matumizi zimeainisha hatua mbalimbali za kurudia matumizi, zikiwemo **"kurudia kihisia,"** ikifuatiwa na **"kurudia kiakili,"** na hatimaye **"kurudia kimwili."** Uchambuzi huu wa hatua za kurudia matumizi husaidia kutambua mapema dalili na viashiria vya awali, na kuweka mikakati ya kuzuia katika kila hatua.
 
-Baadhi ya wagonjwa walio katika hatua za awali za kupona hujijengea matarajio yasiyo ya kweli, kwa kuamini kuwa hawatawahi tena kufikiria kutumia au kurudia matumizi. Watoa huduma wanapaswa kusisitiza kuwa mawazo ya mara kwa mara kuhusu kutumia au matamanio ni sehemu ya kawaida ya mchakato wa kupona, ili waweze kuwasaidia wagonjwa kujifunza stadi muhimu za kukabiliana na changamoto hizi.
 
 
 ## Kurudia Kimwili
