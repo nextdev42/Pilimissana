@@ -119,7 +119,7 @@ Dawa mbalimbali hutumika kuwasaidia watu katika mchakato wa kupona kutokana na u
 Dawa za matatizo ya matumizi ya nikotini kwa kawaida hulenga kusaidia kuacha kutumia badala ya kuzuia kurudia matumizi. Hata hivyo, matibabu ya kudumu yanaweza kuwa muhimu kwa watu wanaorudia matumizi mara kwa mara.
 **Bupropion** imeonyeshwa kuwa na ufanisi katika kuzuia kurudia matumizi  na imefanyiwa utafiti hadi miezi 12 baada ya kuacha nikotini. Kuna ushahidi mdogo kuhusu athari za mbadala wa nikotini (ikiwemo sigara za kielektroniki) na **varenicline** katika kuzuia kurudia matumizi.
 
-## Pombe
+**Pombe**
 
 **Disulfiram** ni dawa inayozuia kimeng'enya cha aldehyde dehydrogenase, jambo linalosababisha kujikusanya kwa acetaldehyde mwilini, na hivyo kusababisha athari za mwili zisizofurahisha. Kwa hiyo, disulfiram hufanya kazi kama kizuizi dhidi ya kurudia kunywa pombe hadi mwili utakapomaliza kuvunjavunja dawa hiyo.
 
