@@ -13,6 +13,23 @@ Ingawa kuna maarifa machache kuhusu jinsi ubongo unavyofanya kazi wakati wa kupo
 
 Watoa huduma wamekuwa wakitambua kwa muda mrefu kuwa kurudia matumizi si tukio moja bali ni mchakato. Baadhi ya programu za kuzuia kurudia matumizi zimeainisha hatua mbalimbali za kurudia matumizi, zikiwemo **"kurudia kihisia,"** ikifuatiwa na **"kurudia kiakili,"** na hatimaye **"kurudia kimwili."** Uchambuzi huu wa hatua za kurudia matumizi husaidia kutambua mapema dalili na viashiria vya awali, na kuweka mikakati ya kuzuia katika kila hatua.
 
+## Kurudia Kihisia
+
+Kurudia kihisia kunaweza kutokea wakati mtu anakumbuka kurudia matumizi kwa mara ya mwisho, hataki kurudia tena, na hafikirii kutumia. Hata hivyo, hisia zake na tabia zinazotokana na hisia hizo zinaweza kuwa zinaweka msingi wa kurudia matumizi tena. Watu walioko katika hatua hii mara nyingi hawapangi kurudia matumizi, hivyo wanaweza kuwa katika hali ya kukataa hatari waliyonayo ya kurudia. Kukataa huku kunaweza kuwazuia kutumia mbinu bora za kuzuia kuendelea kwa mchakato wa kurudia matumizi.
+
+Dalili za kurudia kihisia ni pamoja na kujitenga na wengine, kutohudhuria mikutano (au kutoshiriki katika mikutano), kuelekeza mawazo yao kwa matatizo ya watu wengine, na kuwa na ratiba mbaya ya kulala au kula.
+
+Kuna malengo mawili makuu katika hatua hii. Lengo la kwanza ni kumsaidia mgonjwa kuelewa umuhimu wa kujitunza. Lengo la pili ni kuwasaidia wagonjwa kutambua hali yao ya kukataa ili waweze kuelewa zaidi umuhimu wa kuchukua hatua za kuepuka kuendelea katika hatua nyingine za kurudia matumizi.
+
+## Kurudia Kiakili
+
+Wakati wa kurudia kiakili, mgonjwa hupambana ndani ya nafsi kati ya hamu ya kurejea kutumia na nia ya kuendelea kujiepusha na matumizi.
+
+Dalili za kurudia kiakili ni pamoja na kutamani kutumia tena, kufikiria watu/maeneo/vitu vilivyohusiana na matumizi yao ya awali, kuongezea mazuri ya matumizi ya zamani na/au kupunguza uzito wa madhara waliyopata awali, kusema uongo, kujadiliana na nafsi, kupanga njia za kutumia huku wakijidanganya kuwa bado wana udhibiti, kutafuta fursa za kurudia matumizi, na kupanga kurudia matumizi.
+
+Watoa huduma huwasaidia wagonjwa katika hatua hii kutambua na kuepuka hali zinazoongeza hatari ya kurudia kimwili. Washiriki katika hatua hii wanaweza kuwa katika hatari kubwa ya kurudia kimwili wakati wa nyakati maalum, kama vile hafla ya kijamii, sikukuu, au safari ambapo wanaweza kutumia mbinu za kujihalalishia kiakili ili kurudia matumizi.
+
+Baadhi ya wagonjwa walio katika hatua za awali za kupona hujijengea matarajio yasiyo ya kweli, kwa kuamini kuwa hawatawahi tena kufikiria kutumia au kurudia matumizi. Watoa huduma wanapaswa kusisitiza kuwa mawazo ya mara kwa mara kuhusu kutumia au matamanio ni sehemu ya kawaida ya mchakato wa kupona, ili waweze kuwasaidia wagonjwa kujifunza stadi muhimu za kukabiliana na changamoto hizi.
 
 
 ## Kurudia Kimwili
