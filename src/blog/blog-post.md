@@ -38,7 +38,7 @@ Hatua ya mwisho ya kurudia matumizi hutokea pale mtu anaporejelea matumizi ya ki
 
 Kurudia kimwili mara nyingi hutokea nyakati ambazo mtu anaamini kuwa matumizi yake hayatagundulika. Katika kuwasaidia wagonjwa walioko katika hatua za awali za kupona, watoa huduma wanapaswa kuhakikisha kuwa wagonjwa wana stadi za kutosha kutambua hali za hatari kubwa na kuepuka kutumia.
 
-Hatua za Kupona
+### Hatua za Kupona
 
 Watafiti na wataalamu wa tiba wamebaini hatua mbalimbali zinazosaidia kuelezea mchakato wa maendeleo ya watu wengi katika safari ya kupona.
 
@@ -46,15 +46,15 @@ Hatua ya Kujiepusha na Matumizi
 
 Wataalamu wengi wanakubaliana kuwa hatua ya kujiepusha huanza mara tu mtu anapoacha kutumia kilevi au dawa, na inaweza kuendelea kwa muda wa mwaka mmoja hadi miwili. Katika hatua hii, jambo kuu kwa mgonjwa ni kukabiliana na matamanio ya kutumia na kuepuka kurudia matumizi.
 
-Hatua ya Marekebisho
+### Hatua ya Marekebisho
 
 Hatua hii ya marekebisho kwa kawaida hudumu kwa miaka miwili hadi mitatu. Katika kipindi hiki, mtu hufanya kazi ya kurekebisha madhara yaliyoletwa na uraibu. Washiriki katika hatua hii mara nyingi huanza kujisikia vizuri zaidi, lakini wanapokabiliana na majeraha ya kihisia ya zamani au matukio mabaya ya maisha yaliyohusiana na matumizi yao, wanaweza kuhisi vibaya mara nyingine.
 
-Hatua ya Ukuaji
+### Hatua ya Ukuaji
 
 Hatua ya ukuaji huanza baada ya mtu kurekebisha kwa kiasi kikubwa madhara yaliyosababishwa na uraibu. Hatua hii kwa kawaida hufikiriwa kuanza kati ya miaka mitatu hadi mitano baada ya mtu kuacha kutumia, na inatarajiwa kuendelea kwa kipindi chote cha maisha yake. Ukuaji wa mtu katika hatua hii mara nyingi hujumuisha kupata uzoefu na kukuza stadi ambazo walikosa kutokana na uraibu, hasa iwapo uraibu ulianza wakiwa na umri mdogo.
 
-Umuhimu wa Kitiba
+### Umuhimu wa Kitiba
 
 Kuzuia kurudia matumizi huenda ikawa jukumu la msingi kabisa katika mchakato wa kupona kutokana na uraibu. Mikakati mitano mikuu imetumika katika kuzuia kurudia matumizi:
 
