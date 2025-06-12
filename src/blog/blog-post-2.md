@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Detoxification ni nini? 
-date: 2025-06-10T17:55:06.069Z
+date: 2025-06-03T17:55:06.069Z
 featuredimage: /img/alina-karpenko-jH1PBHevj38-unsplash.jpg
 categories:
   - blog
