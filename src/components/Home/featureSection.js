@@ -55,7 +55,7 @@ const FeatureSection = () => {
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
               <div className="rounded-md">
                 <a
-                  href="tel:#"
+                  href="tel:+255715744464"
                   className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
                   Tupigie Sasa 
