@@ -101,7 +101,7 @@ const Navbar = () => {
 
             <a
               className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
-              href="/gallery"
+              href="/picha"
             >
               Picha
             </a>
