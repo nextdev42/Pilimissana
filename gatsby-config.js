@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `PILI MISSANA - Sober house foundation`,
     description: `Tuna toa tiba za maradhi ya uraibu wa madawa ya kulevya kama vile pombe, bangi, heroin, cocaine, tramadol, na dawa nyingine za kulevya`,
-    siteUrl: "https://pilimissanasoberhouse.co.tz",
+    siteUrl: "https://pilimissanasoberhouse.co.tz", // Required for sitemap
     author: `Said Abdulkadir <said.abdulkadiri@protonmail.com>`,
   },
   plugins: [
@@ -28,15 +28,13 @@ module.exports = {
         name: "_content",
       },
     },
-    
     {
-       resolve: "gatsby-source-filesystem",
-       options: {
-         path: `${__dirname}/src/gallery`,
-         name: "gallery",
-  },
-},
-
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/gallery`,
+        name: "gallery",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -52,7 +50,6 @@ module.exports = {
           {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
-              // destinationDir: "public",
               ignoreFileExtensions: [
                 `png`,
                 `jpg`,
@@ -67,10 +64,9 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1360,
-              withWebp: false,
-              showCaptions: false,
               quality: 100,
-              disableBgImageOnAlpha: false,
+              showCaptions: false,
+              withWebp: false,
               wrapperStyle: `margin: 7vw 0;`,
             },
           },
@@ -94,7 +90,7 @@ module.exports = {
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
         display: `standalone`,
-        icon: `src/images/3D-liquid-abstract-5.webp`, // This path is relative to the root of the site.
+        icon: `src/images/3D-liquid-abstract-5.webp`,
       },
     },
     {
@@ -111,10 +107,21 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-gatsby-cloud`,
-    "gatsby-plugin-postcss",
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        resolveSiteUrl: () => `https://pilimissanasoberhouse.co.tz`,
+        serialize: ({ path }) => {
+          return {
+            url: `https://pilimissanasoberhouse.co.tz${path}`,
+            changefreq: `daily`,
+            priority: 0.7,
+          };
+        },
+      },
+    },
   ],
-}
+};
