@@ -27,7 +27,7 @@ function Seo({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const siteUrl = site.siteMetadata.siteUrl
-  const metaImage = `${siteUrl}/default-share.jpg` // Replace with your actual OG image path
+  const metaImage = `${siteUrl}/img/default-share.jpg` // ✅ Correct path
 
   return (
     <Helmet
