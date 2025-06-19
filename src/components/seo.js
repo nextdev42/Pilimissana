@@ -27,7 +27,7 @@ function Seo({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const siteUrl = site.siteMetadata.siteUrl
-  const metaImage = `${siteUrl}/img/default-share.jpg` // ✅ Correct path
+  const metaImage = `${siteUrl}/img/Polish_20250609_183326692.jpg` // ✅ Correct path
 
   return (
     <Helmet
