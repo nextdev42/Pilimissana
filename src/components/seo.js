@@ -1,6 +1,6 @@
 /**
  * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
+ * Gatsby's useStaticQuery React hook
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
@@ -26,46 +26,64 @@ function Seo({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const siteUrl = site.siteMetadata.siteUrl
+  const metaImage = `${siteUrl}/default-share.jpg` // Replace with your actual OG image path
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      link={[
+        {
+          rel: "canonical",
+          href: siteUrl,
+        },
+      ]}
       meta={[
         {
-          name: `description`,
+          name: "description",
           content: metaDescription,
         },
         {
-          property: `og:title`,
+          property: "og:title",
           content: title,
         },
         {
-          property: `og:description`,
+          property: "og:description",
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: "og:type",
+          content: "website",
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: "og:url",
+          content: siteUrl,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          property: "og:image",
+          content: metaImage,
         },
         {
-          name: `twitter:title`,
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:creator",
+          content: site.siteMetadata?.author || "",
+        },
+        {
+          name: "twitter:title",
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: "twitter:description",
           content: metaDescription,
+        },
+        {
+          name: "twitter:image",
+          content: metaImage,
         },
       ].concat(meta)}
     />
@@ -73,9 +91,9 @@ function Seo({ description, lang, meta, title }) {
 }
 
 Seo.defaultProps = {
-  lang: `sw`,
+  lang: "sw",
   meta: [],
-  description: ``,
+  description: "",
 }
 
 Seo.propTypes = {
