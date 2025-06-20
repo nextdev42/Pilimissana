@@ -112,7 +112,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap-index.xml`,
+        output: `/`,
         resolveSiteUrl: () => `https://pilimissanasoberhouse.co.tz`,
         serialize: ({ path }) => {
           return {
