@@ -75,6 +75,6 @@ Safari ya kupona si rahisi, lakini **huhitaji kuifanya peke yako**.
 
 ### Unahitaji Msaada?
 
-🔍 Tafuta mkutano wa NA karibu yako au mtandaoni:
-🌐 www.na.org
+🔍 Tafuta mkutano wa NA karibu yako au mtandaoni: 🌐 www.na.org
+
 📞 Au wasiliana na kituo cha karibu cha afya ya akili au urekebishaji
