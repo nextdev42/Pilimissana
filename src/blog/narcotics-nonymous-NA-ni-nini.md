@@ -56,12 +56,15 @@ Kujenga tena maisha, uhusiano, na kujiheshimu
 ### Mawazo Potofu Yanayohusu NA
 
 ❌ Lazima uwe wa dini ili ujiunge na NA
+
 ✅ NA ni ya kiroho, si ya kidini. Unaeleza "Nguvu kuu" yako mwenyewe.
 
 ❌ NA ni kwa watumiaji wa heroin pekee
+
 ✅ NA inakaribisha watu waliotumia aina yoyote ya dawa — hata pombe, bangi, na vidonge.
 
 ❌ NA ni kama kituo cha tiba
+
 ✅ NA ni **jumuiya ya msaada**, si taasisi ya matibabu. Watu wengi hujiunga baada ya kutoka kliniki au rehab.
 
 ### Hitimisho: Kwa Nini NA ni Muhimu
