@@ -6,12 +6,12 @@ featuredimage: /img/holographic-background.webp
 categories:
   - uraibu
 description: >-
-  Katika dunia ambayo uraibu wa dawa za kulevya unaendelea kuharibu maisha, **Narcotics Anonymous (NA)** inajitokeza kama mwanga wa matumaini. 
+  Katika dunia ambayo uraibu wa dawa za kulevya unaendelea kuharibu maisha, **Narcotics Anonymous (NA)** inajitokeza kama mwanga wa matumaini. Iwe unatafuta msaada wewe mwenyewe, unamsaidia mpendwa au una hamu ya kuelewa zaidi, kuelewa NA kunaweza kuwa hatua muhimu ya kwanza.
 ---
 
 ## Kuelewa Narcotics Anonymous (NA): Tumaini Katika Safari ya Kupona
 
-Iwe unatafuta msaada wewe mwenyewe, unamsaidia mpendwa au una hamu ya kuelewa zaidi, kuelewa NA kunaweza kuwa hatua muhimu ya kwanza.
+
 
 ### NA ni Nini?
 
