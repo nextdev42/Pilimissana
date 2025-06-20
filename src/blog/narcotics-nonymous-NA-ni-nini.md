@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Narcotics Anonymous (NA) ni nini?
 date: 2025-06-18T18:18:16.118Z
-featuredimage: /img/holographic-background.webp
+featuredimage: /img/dorota-trzaska-1tAtO-9HYdescription.jpg
 categories:
   - uraibu
 description: >-
