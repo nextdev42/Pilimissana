@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Uraibu ni nini? 
-date: 2025-06-11T15:47:18.616Z
+date: 2025-06-04T15:47:18.616Z
 featuredimage: /img/myriam-zilles-KltoLK6Mk-g-unsplash.jpg
 categories:
   - blog
