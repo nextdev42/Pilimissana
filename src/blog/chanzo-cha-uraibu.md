@@ -8,16 +8,16 @@ categories:
 tags:
   - blog
 description: >-
-  Ni muhimu kufaham kwamba hakuna chanzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
+  Ni muhimu kufaham kwamba hakuna chanzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata. Sababu kuu za uraibu ni pamoja na mshtuko wa kihisia (trauma), matatizo ya afya ya akili, na kurithi tabia fulani kutoka kwa wazazi (vinasaba). Hata hivyo, ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu.
   
 ---
 
 
-ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu. Hakuna mtu anayeweza kutabiri kwa uhakika ni nani atakayepata uraibu baada ya kutumia dawa za kulevya na ni nani hatapata.
-Sababu kuu za uraibu ni pamoja na mshtuko wa kihisia (trauma), matatizo ya afya ya akili, na kurithi tabia fulani kutoka kwa wazazi (vinasaba). Hata hivyo, ni muhimu kufahamu kwamba hakuna chanzo kimoja pekee cha uraibu.
 
 ## MIZIZI – CHANZO CHA NDANI CHA URAIBU
+
 ![Mizizi ya uraibu](/img/IMG-20250606-WA0287.jpg) 
+
 Mizizi ya mti inaelezwa kuwa ni "The Underlying Damage of Shame, Wounding and Division within the Individual", yaani:
 
 *Aibu ya ndani, majeraha ya kihisia, na mgawanyiko wa nafsi ya mtu*
