@@ -150,7 +150,4 @@ export const pageQuery = graphql`
     }
   }
 `
----
 
-✅ **Matokeo:** `description` itaonekana moja kwa moja chini ya tarehe, kabla ya content kuu.  
-Ukitaka nikuandalie design ya description iwe kama summary au kwa box nzuri, niambie.
