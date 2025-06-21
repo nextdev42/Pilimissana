@@ -7,7 +7,7 @@ categories:
   - blog
 tags:
   - blog
-description: Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo pombe** kujipiga *ndonga* **kujiweka Mbali na dawa za kulevya pamoja na vyanzo vyote vya dawa za kulevya** kwa lengo la ku ruhusu mwili wake utoe sumu ya dawa za kulevya alizo kuwa akitumia.
+description: "**Je, Dopamine ni Nini?** Huenda umewahi kusikia jina **dopamine** likitajwa kama \"kemikali ya raha\" inayohusishwa na tabia za uraibu. Watu wengi hutumia maneno kama **“dopamine rush”** kueleza msisimko wa ghafla wanaoupata wanapofanya jambo linalowapa raha iwe ni kununua kitu kipya au kupata zawadi isiyotarajiwa."
 ---
 
 
