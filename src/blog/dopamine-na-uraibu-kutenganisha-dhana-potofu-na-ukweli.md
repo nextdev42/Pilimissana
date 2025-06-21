@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Dopamine na Uraibu Kutenganisha Dhana Potofu na Ukweli
 date: 2025-06-20T11:30:06.069Z
-featuredimage: /img/alina-karpenko-jH1PBHevj38-unsplash.jpg
+featuredimage: /img/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg
 categories:
   - blog
 tags:
