@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Chanzo cha uraibu 
-date: 2025-07-08T19:15:18.616Z
+date: 2025-06-06T19:15:18.616Z
 featuredimage: /img/jonathan-gonzalez-kk-Wa2xMxhY-unsplash.jpg
 categories:
   - blog
