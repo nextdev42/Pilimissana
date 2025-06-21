@@ -10,8 +10,6 @@ tags:
 description: Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo pombe** kujipiga *ndonga* **kujiweka Mbali na dawa za kulevya pamoja na vyanzo vyote vya dawa za kulevya** kwa lengo la ku ruhusu mwili wake utoe sumu ya dawa za kulevya alizo kuwa akitumia.
 ---
 
-Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo pombe** kujipiga *ndonga* **kujiweka Mbali na dawa za kulevya pamoja na vyanzo vyote vya dawa za kulevya** kwa lengo la ku ruhusu mwili wake utoe sumu ya dawa za kulevya alizo kuwa akitumia.
-
 Ikiwemo pamoja na kudhibiti kwa usalama dalili za kuacha matumizi ya dawa za kulevya, Kila mtu hupitia uzoefu tofauti wakati wa kuacha matumizi ya dawa za kulevya. Aina ya dawa na muda uliotumika huathiri jinsi mchakato wa kuacha utavyokuwa.
 
 
