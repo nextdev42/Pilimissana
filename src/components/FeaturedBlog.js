@@ -15,16 +15,17 @@ const FeaturedBlog = ({ posts }) => {
 
           <div className="grid md:grid-cols-2 gap-8 mt-10">
             {posts.map(({ node }, index) => {
-              const { title, date } = node.frontmatter
+              const { title, description } = node.frontmatter
               const { slug } = node.fields
-              const trimmed = node.rawMarkdownBody
-               .split("\n") // Split by line
-               .filter(line => !/^#+\s/.test(line)) // Remove headings like ## Heading
-               .join(" ") // Join remaining lines
-               .replace(/\*\*|__|[*_`~]/g, "") // Remove inline Markdown
-               .split(/\s+/) // Split into words
-               .slice(0, 38) // Limit to 38 words
-               .join(" ") + "..."
+
+              const trimmed = description
+                ? description
+                    .replace(/\*\*|__|[*_`~]/g, "") // remove markdown formatting
+                    .split(/\s+/)
+                    .slice(0, 38)
+                    .join(" ") + "..."
+                : ""
+
               return (
                 <div
                   key={slug}
