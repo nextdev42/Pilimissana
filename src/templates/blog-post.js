@@ -6,6 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import LeftIcon from "../images/left-icon.svg"
 import RightIcon from "../images/right-icon.svg"
 import styled from "styled-components"
+import { marked } from "marked"
 
 const StyledDiv = styled.div`
   & h1 {
@@ -34,11 +35,11 @@ const StyledDiv = styled.div`
 `
 
 const DescriptionBox = styled.div`
-  background-color: #bfdbfe; /* blue-200 tailwind equivalent */
-  color: #1e40af; /* blue-800 tailwind equivalent */
+  background-color: #bfdbfe;
+  color: #1e40af;
   font-style: italic;
   padding: 1rem;
-  border-radius: 0.375rem; /* rounded-md */
+  border-radius: 0.375rem;
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
@@ -57,13 +58,9 @@ const BlogPost = props => {
   const previousSlug = pageContext.previous ? pageContext.previous.fields.slug : "/"
   const nextLinkStatus = pageContext.next
     ? pageContext.next.frontmatter.templateKey === "blog-post"
-      ? true
-      : false
     : false
   const previousLinkStatus = pageContext.previous
     ? pageContext.previous.frontmatter.templateKey === "blog-post"
-      ? true
-      : false
     : false
 
   const post = props.data.markdownRemark
@@ -109,7 +106,11 @@ const BlogPost = props => {
             {post.frontmatter.description && (
               <DescriptionBox>
                 <InfoIcon>ℹ️</InfoIcon>
-                <p>{post.frontmatter.description}</p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: marked.parseInline(post.frontmatter.description),
+                  }}
+                />
               </DescriptionBox>
             )}
 
