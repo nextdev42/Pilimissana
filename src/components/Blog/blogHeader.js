@@ -16,7 +16,7 @@ const BlogHeader = ({ post }) => {
   const plainText = htmlDescription.replace(/<[^>]*>?/gm, "")
 
   // Trim to 30 characters
-  const trimmedText = plainText.length > 30 ? plainText.slice(0, 30) + "..." : plainText
+  const trimmedText = plainText.length > 130 ? plainText.slice(0, 130) + "..." : plainText
 
   // Convert trimmed plain text back to Markdown HTML
   const finalHtml = marked.parseInline(trimmedText)
