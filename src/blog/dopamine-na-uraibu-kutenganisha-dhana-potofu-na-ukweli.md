@@ -8,7 +8,7 @@ categories:
 description: >-
   ## Je, Dopamine ni Nini?
 
-Huenda umewahi kusikia jina **dopamine** likitajwa kama "kemikali ya raha" inayohusishwa na tabia za uraibu. Watu wengi hutumia maneno kama **“dopamine rush”** kueleza msisimko wa ghafla wanaoupata wanapofanya jambo linalowapa raha — iwe ni kununua kitu kipya au kupata zawadi isiyotarajiwa.
+  Huenda umewahi kusikia jina **dopamine** likitajwa kama "kemikali ya raha" inayohusishwa na tabia za uraibu. Watu wengi hutumia maneno kama **“dopamine rush”** kueleza msisimko wa ghafla wanaoupata wanapofanya jambo linalowapa raha — iwe ni kununua kitu kipya au kupata zawadi isiyotarajiwa.
 ---
 
 
