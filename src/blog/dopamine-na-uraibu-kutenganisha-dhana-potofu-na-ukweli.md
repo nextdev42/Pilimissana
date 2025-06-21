@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "Dopamine na Uraibu: Kutenganisha Dhana Potofu na Ukweli"
 date: 2025-06-20T11:36:16.118Z
-featuredimage: "/img/dorota-trzaska-1tAtO-9HYNM-unsplash.jpg"
+featuredimage: "/img/robina-weermeijer-3KGF9R_0oHs-unsplash.jpg"
 categories:
   - uraibu
 description: >-
