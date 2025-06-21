@@ -32,36 +32,40 @@ const StyledDiv = styled.div`
     color: #6b46c1;
   }
 `
-
 const BlogPost = props => {
   const { pageContext } = props
+  const nextSlug = pageContext.next ? pageContext.next.fields.slug : "/"
+  const previousSlug = pageContext.previous
+    ? pageContext.previous.fields.slug
+    : "/"
+  const nextLinkStatus = pageContext.next
+    ? pageContext.next.frontmatter.templateKey === "blog-post"
+      ? true
+      : false
+    : false
+  const previousLinkStatus = pageContext.previous
+    ? pageContext.previous.frontmatter.templateKey === "blog-post"
+      ? true
+      : false
+    : false
+
   const post = props.data.markdownRemark
-
-  const nextSlug = pageContext.next?.fields?.slug || "/"
-  const previousSlug = pageContext.previous?.fields?.slug || "/"
-
-  const nextLinkStatus = pageContext.next?.frontmatter?.templateKey === "blog-post"
-  const previousLinkStatus = pageContext.previous?.frontmatter?.templateKey === "blog-post"
-
-  const date = new Date(post.frontmatter.date)
-  const formattedDate = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  })
-  const titleDate = date.toLocaleDateString("en-US", {
+  let date = new Date(post.frontmatter.date) // assuming post.frontmatter.date is in ISO string format
+  let options = { year: "numeric", month: "short", day: "numeric" }
+  let formattedDate = date.toLocaleDateString("en-US", options)
+  let titlaDate = date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   })
-  const isoDate = date.toISOString().split("T")[0]
+
+  let isoDate = date.toISOString().split("T")[0] // get the date part of the ISO string
 
   return (
     <Layout>
       <Seo
-        title={post.frontmatter.title}
-        // Optional: only include description if available
-        description={post.frontmatter.description || ""}
+        title="Blog"
+        description="We have been providing professional repair services in the city since 1993 ,and we have helped thousands of local car owners to restore their vehicles."
       />
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
@@ -81,7 +85,7 @@ const BlogPost = props => {
               </div>
             )}
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
-              <time dateTime={isoDate} title={titleDate}>
+              <time dateTime={isoDate} title={titlaDate}>
                 {formattedDate}
               </time>
             </p>
@@ -90,37 +94,48 @@ const BlogPost = props => {
               className="post-content-body text-[#000000]"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-
             <div className="flex items-center justify-between pt-8">
               <div>
-                {previousLinkStatus && (
-                  <a
-                    href={previousSlug}
-                    className="flex items-center text-base text-[#131313]"
-                  >
-                    <img src={LeftIcon} alt="LeftIcon" width={30} height={30} />
-                    <span>
-                      {pageContext.previous.frontmatter.title.length > 30
-                        ? pageContext.previous.frontmatter.title.slice(0, 30) + "..."
-                        : pageContext.previous.frontmatter.title}
-                    </span>
-                  </a>
-                )}
+                <a
+                  style={{
+                    display: previousLinkStatus ? "flex" : "none",
+                    alignItems: "center",
+                    color: "#131313",
+                  }}
+                  className="text-base	"
+                  href={previousSlug}
+                >
+                  <img src={LeftIcon} alt="LeftIcon" width={30} height={30} />
+                  <span>
+                    {pageContext.previous
+                      ? pageContext.previous.frontmatter.title?.length > 30
+                        ? pageContext.previous.frontmatter.title.slice(0, 30) +
+                          "..."
+                        : pageContext.previous.frontmatter.title
+                      : ""}
+                  </span>
+                </a>
               </div>
               <div>
-                {nextLinkStatus && (
-                  <a
-                    href={nextSlug}
-                    className="flex items-center text-base text-[#131313]"
-                  >
-                    <span>
-                      {pageContext.next.frontmatter.title.length > 30
-                        ? pageContext.next.frontmatter.title.slice(0, 30) + "..."
-                        : pageContext.next.frontmatter.title}
-                    </span>
-                    <img src={RightIcon} alt="RightIcon" width={30} height={30} />
-                  </a>
-                )}
+                <a
+                  style={{
+                    display: nextLinkStatus ? "flex" : "none",
+                    alignItems: "center",
+                    color: "#131313",
+                  }}
+                  className="text-base	"
+                  href={nextSlug}
+                >
+                  <span>
+                    {pageContext.next
+                      ? pageContext?.next?.frontmatter?.title?.length > 30
+                        ? pageContext?.next?.frontmatter?.title?.slice(0, 30) +
+                          "..."
+                        : pageContext?.next?.frontmatter?.title
+                      : ""}
+                  </span>
+                  <img src={RightIcon} alt="RightIcon" width={30} height={30} />
+                </a>
               </div>
             </div>
           </article>
@@ -144,7 +159,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
         description
         featuredimage {
           childImageSharp {
@@ -155,4 +170,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
