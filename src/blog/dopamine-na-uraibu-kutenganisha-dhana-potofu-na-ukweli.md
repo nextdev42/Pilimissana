@@ -73,8 +73,11 @@ Ikiwa wewe au mtu wako wa karibu anapambana na uraibu, **msaada unapatikana**.
 
 **Wasiliana na mashirika ya msaada kama SAMHSA au NIDA (kwa wale walio nje ya Tanzania).**
 
-Kwa Tanzania, unaweza kuwasiliana na vituo vya huduma ya afya ya akili au kuwasiliana nasi moja kwa moja hapa  pili.missana@pilimissanasoberhouse.co.tz 
-+255 715 744 464
+Kwa Tanzania, unaweza kuwasiliana na vituo vya huduma ya afya ya akili au   
+Unaweza kuwasiliana nasi moja kwa moja hapa:  
+📧 [pili.missana@pilimissanasoberhouse.co.tz](mailto:pili.missana@pilimissanasoberhouse.co.tz)  
+📞 [Simu: +255 715 744 464](tel:+255715744464)
+
 
 ### Hitimisho
 
@@ -83,4 +86,8 @@ Dopamine ni sehemu ya mchakato wa uraibu, lakini **si chanzo chake moja kwa moja
 **Uelewa sahihi wa dopamine unaweza kusaidia kuvunja unyanyapaa na kusaidia watu kupona kwa huruma na ufanisi.**
 
 Unahitaji msaada au ushauri kuhusu uraibu?
-Tafadhali wasiliana nasi kwa [namba ya simu / barua pepe / WhatsApp] au tembelea kituo chetu kwa msaada
+**Tafadhali wasiliana nasi kwa:**  
+📞 [Simu: +255 715 744 464](tel:+255715744464)  
+📧 [Barua pepe: pili.missana@pilimissanasoberhouse.co.tz](mailto:pili.missana@pilimissanasoberhouse.co.tz)  
+🌐 [Tembelea tovuti yetu](https://www.pilimissanasoberhouse.co.tz)
+
