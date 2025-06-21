@@ -78,7 +78,7 @@ Mchakato wa detox mara nyingi huhusisha matumizi ya dawa zinazofanana na athari 
 
 Dawa ambazo ni hatari zaidi kuacha kutumia, na mara nyingi huhitaji dawa maalum, ni pamoja na **pombe na benzodiazepines**. Dawa ambazo huleta usumbufu mkubwa zaidi wakati wa detox ni **opioids**, hasa **heroin**
 
-### Je, Detox Ni Salama Kwa Kila Mtu?
+## Je, Detox Ni Salama Kwa Kila Mtu?
 
 
 Watu wengi wanaweza kufaidika na mchakato wa detox, lakini si kila mtu anaweza kufanya hivyo kwa njia salama bila uangalizi wa kitaalamu. Kuna baadhi ya watu ambao wako kwenye hatari kubwa ya madhara wakati wa kuacha matumizi ya dawa za kulevya au pombe, na hawa wanapaswa kupata msaada wa kitabibu mara moja. Hii ni pamoja na:
@@ -94,7 +94,7 @@ Watu wengi wanaweza kufaidika na mchakato wa detox, lakini si kila mtu anaweza k
 Katika hali hizi, detox inapaswa kufanyika katika mazingira salama yenye usimamizi wa karibu wa wataalamu wa afya.
 
 
-### Faida za Detox ya Kitabibu
+## Faida za Detox ya Kitabibu
 
 
 Detox inayosimamiwa na wataalamu wa afya ina faida nyingi, ikiwa ni pamoja na:
@@ -113,7 +113,7 @@ Detox inayosimamiwa na wataalamu wa afya ina faida nyingi, ikiwa ni pamoja na:
 
 
 
-### Hitimisho
+## Hitimisho
 
 
 Detoxification ni hatua ya kwanza tu ya safari ya kupona kutoka kwenye uraibu. Ingawa ni muhimu, haitoshi pekee yake. Mafanikio ya kweli huja kwa kufuata mpango kamili wa matibabu unaojumuisha usaidizi wa kisaikolojia, ushauri nasaha, na marekebisho ya mtindo wa maisha.
