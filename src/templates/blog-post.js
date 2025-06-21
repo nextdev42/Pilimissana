@@ -36,56 +36,52 @@ const StyledDiv = styled.div`
 const BlogPost = props => {
   const { pageContext } = props
   const post = props.data.markdownRemark
-  const { title, date, description, featuredimage } = post.frontmatter
 
-  const nextSlug = pageContext.next?.fields.slug || "/"
-  const previousSlug = pageContext.previous?.fields.slug || "/"
+  const nextSlug = pageContext.next?.fields?.slug || "/"
+  const previousSlug = pageContext.previous?.fields?.slug || "/"
 
-  const nextLinkStatus =
-    pageContext.next?.frontmatter.templateKey === "blog-post"
-  const previousLinkStatus =
-    pageContext.previous?.frontmatter.templateKey === "blog-post"
+  const nextLinkStatus = pageContext.next?.frontmatter?.templateKey === "blog-post"
+  const previousLinkStatus = pageContext.previous?.frontmatter?.templateKey === "blog-post"
 
-  let dateObj = new Date(date)
-  let formattedDate = dateObj.toLocaleDateString("en-US", {
+  const date = new Date(post.frontmatter.date)
+  const formattedDate = date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
     day: "numeric",
   })
-  let titlaDate = dateObj.toLocaleDateString("en-US", {
+  const titleDate = date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   })
-  let isoDate = dateObj.toISOString().split("T")[0]
+  const isoDate = date.toISOString().split("T")[0]
 
   return (
     <Layout>
-      <Seo title={title} description={description} />
+      <Seo
+        title={post.frontmatter.title}
+        // Optional: only include description if available
+        description={post.frontmatter.description || ""}
+      />
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
           <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#000000] lg:mb-6 lg:text-4xl dark:text-black">
-                {title}
+                {post.frontmatter.title}
               </h1>
-              {description && (
-                <p className="text-lg text-gray-600 mb-4">{description}</p>
-              )}
             </header>
-
-            {featuredimage && (
+            {post.frontmatter.featuredimage && (
               <div className="post-content-image">
                 <GatsbyImage
-                  image={getImage(featuredimage)}
+                  image={getImage(post.frontmatter.featuredimage)}
                   className="lg:mb-2 overflow-hidden rounded-xl"
-                  alt={title}
+                  alt={post.frontmatter.title}
                 />
               </div>
             )}
-
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
-              <time dateTime={isoDate} title={titlaDate}>
+              <time dateTime={isoDate} title={titleDate}>
                 {formattedDate}
               </time>
             </p>
@@ -99,35 +95,30 @@ const BlogPost = props => {
               <div>
                 {previousLinkStatus && (
                   <a
-                    className="text-base flex items-center"
                     href={previousSlug}
-                    style={{ color: "#131313" }}
+                    className="flex items-center text-base text-[#131313]"
                   >
-                    <img src={LeftIcon} alt="Previous" width={30} height={30} />
-                    <span className="ml-2">
+                    <img src={LeftIcon} alt="LeftIcon" width={30} height={30} />
+                    <span>
                       {pageContext.previous.frontmatter.title.length > 30
-                        ? pageContext.previous.frontmatter.title.slice(0, 30) +
-                          "..."
+                        ? pageContext.previous.frontmatter.title.slice(0, 30) + "..."
                         : pageContext.previous.frontmatter.title}
                     </span>
                   </a>
                 )}
               </div>
-
               <div>
                 {nextLinkStatus && (
                   <a
-                    className="text-base flex items-center"
                     href={nextSlug}
-                    style={{ color: "#131313" }}
+                    className="flex items-center text-base text-[#131313]"
                   >
-                    <span className="mr-2">
+                    <span>
                       {pageContext.next.frontmatter.title.length > 30
-                        ? pageContext.next.frontmatter.title.slice(0, 30) +
-                          "..."
+                        ? pageContext.next.frontmatter.title.slice(0, 30) + "..."
                         : pageContext.next.frontmatter.title}
                     </span>
-                    <img src={RightIcon} alt="Next" width={30} height={30} />
+                    <img src={RightIcon} alt="RightIcon" width={30} height={30} />
                   </a>
                 )}
               </div>
@@ -164,3 +155,4 @@ export const pageQuery = graphql`
     }
   }
 `
+
