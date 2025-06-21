@@ -1,13 +1,13 @@
 ---
 templateKey: blog-post
-title: Detoxification ni nini? 
-date: 2025-06-03T17:55:06.069Z
+title: Dopamine na Uraibu Kutenganisha Dhana Potofu na Ukweli
+date: 2025-06-20T11:30:06.069Z
 featuredimage: /img/alina-karpenko-jH1PBHevj38-unsplash.jpg
 categories:
   - blog
 tags:
   - blog
-description: Detoxification nikitendo cha mtumiaji wa dawa za kulevya **ikiwemo pombe** kujipiga *ndonga* **kujiweka Mbali na dawa za kulevya pamoja na vyanzo vyote vya dawa za kulevya** kwa lengo la ku ruhusu mwili wake utoe sumu ya dawa za kulevya alizo kuwa akitumia.
+description: Detoxification nikitendo Huenda umewahi kusikia jina **dopamine** likitajwa kama "kemikali ya raha" inayohusishwa na tabia za uraibu. Watu wengi hutumia maneno kama **“dopamine rush”** kueleza msisimko wa ghafla wanaoupata wanapofanya jambo linalowapa raha — iwe ni kununua kitu kipya au kupata zawadi isiyotarajiwa.
 ---
 
 
