@@ -1,16 +1,12 @@
 ---
 templateKey: blog-post
-title: Dopamine na Uraibu: Kutenganisha Dhana Potofu na Ukweli
+title: "Dopamine na Uraibu: Kutenganisha Dhana Potofu na Ukweli"
 date: 2025-06-20T11:36:16.118Z
-featuredimage: /img/dorota-trzaska-1tAtO-9HYNM-unsplash.jpg
+featuredimage: "/img/dorota-trzaska-1tAtO-9HYNM-unsplash.jpg"
 categories:
   - uraibu
-description: >
-  tesr
+description: "Je, dopamine ni kweli kemikali ya raha inayosababisha uraibu? Makala hii inachambua dhana potofu na ukweli wa kisayansi kuhusu jukumu la dopamine."
 ---
-
-
-
 
 
 Lakini je, hayo yote tunayoyasikia kuhusu dopamine ni kweli?
