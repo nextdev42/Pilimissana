@@ -4,7 +4,6 @@ import Button from "../Atoms/button"
 import Fade from "react-reveal/Fade"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-import { marked } from "marked"
 
 const BlogsContainer = ({ data }) => {
   const posts = data?.map(item => ({
@@ -13,6 +12,18 @@ const BlogsContainer = ({ data }) => {
     description: item.node.frontmatter.description,
     slug: item.node.fields.slug,
   }))
+
+  // Helper to trim text to exactly 38 words
+  const trimTo38Words = text => {
+    if (!text) return ""
+    const clean = text
+      .replace(/<[^>]+>/g, "") // remove HTML tags
+      .replace(/\*\*|__|[*_`~]/g, "") // remove markdown
+      .split(/\s+/) // split into words
+      .slice(0, 38) // first 38 words
+      .join(" ")
+    return clean + "..."
+  }
 
   return (
     <div className="max-w-7xl mx-auto mt-10 px-8 text-black">
@@ -38,20 +49,17 @@ const BlogsContainer = ({ data }) => {
                   <h1 className="text-2xl font-semibold mt-2 mb-4">{blog.title}</h1>
                 </Link>
 
-                {/* Render Markdown in description */}
-                <p
-                  className="text-sm opacity-50 mt-2"
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parse(blog.description || ""),
-                  }}
-                />
+                {/* Show 38-word trimmed plain description */}
+                <p className="text-sm opacity-50 mt-2">
+                  {trimTo38Words(blog.description)}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </Fade>
 
-      {/* Netlify Newsletter Form */}
+      {/* Newsletter */}
       <div className="w-auto p-8 m-4 h-72 sm:h-96 xs:h-96 xxs:h-96 mt-10 bg-gradient-to-r from-pink to-purple rounded-xl flex flex-col items-center justify-center">
         <h2 className="text-3xl font-bold text-black text-center">
           KUPATA MAKALA ZETU
@@ -67,7 +75,6 @@ const BlogsContainer = ({ data }) => {
           className="mt-10 flex flex-col items-center justify-center"
         >
           <input type="hidden" name="form-name" value="newsletter" />
-
           <input
             type="email"
             name="email"
@@ -75,7 +82,6 @@ const BlogsContainer = ({ data }) => {
             placeholder="Weka Email yako"
             className="text-black p-2 rounded mb-4"
           />
-
           <button
             type="submit"
             className="transition-all duration-500 ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-black hover:text-white rounded-lg border border-purple hover:bg-purple"
