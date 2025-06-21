@@ -5,7 +5,9 @@ date: 2025-06-20T11:36:16.118Z
 featuredimage: "/img/dorota-trzaska-1tAtO-9HYNM-unsplash.jpg"
 categories:
   - uraibu
-description: "Je, dopamine ni kweli kemikali ya raha inayosababisha uraibu? Makala hii inachambua dhana potofu na ukweli wa kisayansi kuhusu jukumu la dopamine."
+description: >-
+  Huenda umewahi kusikia jina **dopamine** likitajwa kama "kemikali ya raha" inayohusishwa na uraibu. Watu wengi hutumia maneno kama **“dopamine rush”** kueleza msisimko wa ghafla wanaoupata wanapofanya jambo linalowapa raha.
+
 ---
 
 
