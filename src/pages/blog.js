@@ -1,4 +1,4 @@
-timport React from "react"
+import React from "react"
 import BlogHeader from "../components/Blog/blogHeader"
 import BlogsContainer from "../components/Blog/blogsContainer"
 import Layout from "../components/layout"
