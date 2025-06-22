@@ -6,7 +6,7 @@ categories:
   - blog
 tags:
   - blog
-featuredimage: /img/alina-karpenko-jH1PBHevj38-unsplash.jpg
+featuredimage: /img/detox-vs-rehab-tanzania.png
 keywords: ["Detox ni nini", "Rehab Tanzania", "Tiba ya uraibu", "Kuacha dawa za kulevya", "Safari ya uponyaji", "Matibabu ya uraibu nchini Tanzania"]
 templateKey: blog-post
 ---
