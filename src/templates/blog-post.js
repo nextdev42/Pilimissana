@@ -9,29 +9,11 @@ import styled from "styled-components"
 import { marked } from "marked"
 
 const StyledDiv = styled.div`
-  & h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
-  }
-  & h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 2.2;
-  }
-  & h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 2;
-  }
-  & h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 2;
-  }
-  & a {
-    color: #6b46c1;
-  }
+  & h1 { font-size: 2rem; font-weight: 700; line-height: 1.5; }
+  & h2 { font-size: 1.5rem; font-weight: 700; line-height: 2.2; }
+  & h3 { font-size: 1.2rem; font-weight: 600; line-height: 2; }
+  & h4 { font-size: 1.1rem; font-weight: 600; line-height: 2; }
+  & a { color: #6b46c1; }
 `
 
 const DescriptionBox = styled.div`
@@ -52,65 +34,59 @@ const InfoIcon = styled.span`
   margin-top: 0.2rem;
 `
 
-const BlogPost = props => {
-  const { pageContext } = props
-  const nextSlug = pageContext.next ? pageContext.next.fields.slug : "/"
-  const previousSlug = pageContext.previous ? pageContext.previous.fields.slug : "/"
-  const nextLinkStatus = pageContext.next
-    ? pageContext.next.frontmatter.templateKey === "blog-post"
-    : false
-  const previousLinkStatus = pageContext.previous
-    ? pageContext.previous.frontmatter.templateKey === "blog-post"
-    : false
+const BlogPost = ({ data, pageContext }) => {
+  const post = data.markdownRemark
+  const { title, description, featuredimage, date } = post.frontmatter
 
-  const post = props.data.markdownRemark
-  let date = new Date(post.frontmatter.date)
-  let options = { year: "numeric", month: "short", day: "numeric" }
-  let formattedDate = date.toLocaleDateString("en-US", options)
-  let titlaDate = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+  const nextSlug = pageContext?.next?.fields?.slug || "/"
+  const previousSlug = pageContext?.previous?.fields?.slug || "/"
+
+  const nextLinkStatus = pageContext?.next?.frontmatter?.templateKey === "blog-post"
+  const previousLinkStatus = pageContext?.previous?.frontmatter?.templateKey === "blog-post"
+
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric", month: "short", day: "numeric",
   })
-  let isoDate = date.toISOString().split("T")[0]
+
+  const titleDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric", month: "long", day: "numeric",
+  })
+
+  const isoDate = new Date(date).toISOString().split("T")[0]
 
   return (
     <Layout>
-      <Seo
-        title="Blog"
-        description="We have been providing professional repair services in the city since 1993 ,and we have helped thousands of local car owners to restore their vehicles."
-      />
+      <Seo title={title} description={description} />
+
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
           <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#000000] lg:mb-6 lg:text-4xl dark:text-black">
-                {post.frontmatter.title}
+                {title}
               </h1>
             </header>
-            {post.frontmatter.featuredimage && (
+
+            {featuredimage && (
               <div className="post-content-image">
                 <GatsbyImage
-                  image={getImage(post.frontmatter.featuredimage)}
+                  image={getImage(featuredimage)}
                   className="lg:mb-2 overflow-hidden rounded-xl"
-                  alt={post.frontmatter.title}
+                  alt={title}
                 />
               </div>
             )}
+
             <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
-              <time dateTime={isoDate} title={titlaDate}>
+              <time dateTime={isoDate} title={titleDate}>
                 {formattedDate}
               </time>
             </p>
 
-            {post.frontmatter.description && (
+            {description && (
               <DescriptionBox>
                 <InfoIcon>ℹ️</InfoIcon>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parseInline(post.frontmatter.description),
-                  }}
-                />
+                <div dangerouslySetInnerHTML={{ __html: marked.parseInline(description) }} />
               </DescriptionBox>
             )}
 
@@ -121,44 +97,28 @@ const BlogPost = props => {
 
             <div className="flex items-center justify-between pt-8">
               <div>
-                <a
-                  style={{
-                    display: previousLinkStatus ? "flex" : "none",
-                    alignItems: "center",
-                    color: "#131313",
-                  }}
-                  className="text-base"
-                  href={previousSlug}
-                >
-                  <img src={LeftIcon} alt="LeftIcon" width={30} height={30} />
-                  <span>
-                    {pageContext.previous
-                      ? pageContext.previous.frontmatter.title?.length > 30
+                {previousLinkStatus && (
+                  <a className="text-base flex items-center text-[#131313]" href={previousSlug}>
+                    <img src={LeftIcon} alt="Previous" width={30} height={30} />
+                    <span>
+                      {pageContext.previous.frontmatter.title.length > 30
                         ? pageContext.previous.frontmatter.title.slice(0, 30) + "..."
-                        : pageContext.previous.frontmatter.title
-                      : ""}
-                  </span>
-                </a>
+                        : pageContext.previous.frontmatter.title}
+                    </span>
+                  </a>
+                )}
               </div>
               <div>
-                <a
-                  style={{
-                    display: nextLinkStatus ? "flex" : "none",
-                    alignItems: "center",
-                    color: "#131313",
-                  }}
-                  className="text-base"
-                  href={nextSlug}
-                >
-                  <span>
-                    {pageContext.next
-                      ? pageContext.next.frontmatter.title?.length > 30
+                {nextLinkStatus && (
+                  <a className="text-base flex items-center text-[#131313]" href={nextSlug}>
+                    <span>
+                      {pageContext.next.frontmatter.title.length > 30
                         ? pageContext.next.frontmatter.title.slice(0, 30) + "..."
-                        : pageContext.next.frontmatter.title
-                      : ""}
-                  </span>
-                  <img src={RightIcon} alt="RightIcon" width={30} height={30} />
-                </a>
+                        : pageContext.next.frontmatter.title}
+                    </span>
+                    <img src={RightIcon} alt="Next" width={30} height={30} />
+                  </a>
+                )}
               </div>
             </div>
           </article>
@@ -182,7 +142,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         description
         featuredimage {
           childImageSharp {
