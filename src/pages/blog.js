@@ -15,6 +15,8 @@ const Blog = ({ data }) => {
       <Seo
         title="Pilimissana - Blog"
         description="Makala za uraibu zilizo andaliwa na wataalamu wetu kwa lengo la ku elimisha na kusaidia jamii juu ya maradhi ya uraibu"
+        pathname="/blog"
+        image={HeaderPost?.node?.featuredimage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
       ></Seo>
       <BlogHeader post={HeaderPost} />
       <BlogsContainer data={otherPosts} />
