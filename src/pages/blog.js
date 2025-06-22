@@ -1,4 +1,4 @@
-import React from "react"
+timport React from "react"
 import BlogHeader from "../components/Blog/blogHeader"
 import BlogsContainer from "../components/Blog/blogsContainer"
 import Layout from "../components/layout"
@@ -7,8 +7,11 @@ import { graphql } from "gatsby"
 import { getSrc } from "gatsby-plugin-image"
 
 const Blog = ({ data }) => {
-  let HeaderPost = data?.allMarkdownRemark?.edges[0]
-  let otherPosts = data?.allMarkdownRemark?.edges.slice(1)
+  const HeaderPost = data?.allMarkdownRemark?.edges[0]
+  const otherPosts = data?.allMarkdownRemark?.edges.slice(1)
+
+  const featuredImage =
+    HeaderPost?.node?.frontmatter?.featuredimage?.childImageSharp?.gatsbyImageData
 
   return (
     <Layout>
@@ -16,7 +19,7 @@ const Blog = ({ data }) => {
         title="Pilimissana - Blog"
         description="Makala za uraibu zilizo andaliwa na wataalamu wetu kwa lengo la kuelimisha na kusaidia jamii juu ya maradhi ya uraibu"
         pathname="/blog"
-        image={getSrc(HeaderPost?.node?.featuredimage?.childImageSharp?.gatsbyImageData)}
+        image={getSrc(featuredImage)}
       />
       <BlogHeader post={HeaderPost} />
       <BlogsContainer data={otherPosts} />
