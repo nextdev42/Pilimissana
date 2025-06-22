@@ -1,16 +1,9 @@
-/**
- * SEO component that queries for data with
- * Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+function Seo({ description, lang, meta, title, image, pathname }) {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -27,7 +20,8 @@ function Seo({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const siteUrl = site.siteMetadata.siteUrl
-  const metaImage = `${siteUrl}/img/Polish_20250609_183326692.jpg` // ✅ Correct path
+  const canonical = pathname ? `${siteUrl}${pathname}` : siteUrl
+  const metaImage = image ? `${siteUrl}${image}` : `${siteUrl}/img/Polish_20250609_183326692.jpg`
 
   return (
     <Helmet
@@ -37,7 +31,7 @@ function Seo({ description, lang, meta, title }) {
       link={[
         {
           rel: "canonical",
-          href: siteUrl,
+          href: canonical,
         },
       ]}
       meta={[
@@ -55,11 +49,11 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: "og:type",
-          content: "website",
+          content: "article",
         },
         {
           property: "og:url",
-          content: siteUrl,
+          content: canonical,
         },
         {
           property: "og:image",
@@ -94,6 +88,8 @@ Seo.defaultProps = {
   lang: "sw",
   meta: [],
   description: "",
+  image: null,
+  pathname: null,
 }
 
 Seo.propTypes = {
@@ -101,6 +97,8 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  pathname: PropTypes.string,
 }
 
 export default Seo
