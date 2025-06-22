@@ -23,6 +23,28 @@ function Seo({ description, lang, meta, title, image, pathname }) {
   const canonical = pathname ? `${siteUrl}${pathname}` : siteUrl
   const metaImage = image ? `${siteUrl}${image}` : `${siteUrl}/img/Polish_20250609_183326692.jpg`
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: metaDescription,
+    image: [metaImage],
+    author: {
+      "@type": "Person",
+      name: site.siteMetadata.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: defaultTitle,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/img/Polish_20250609_183326692.jpg`,
+      },
+    },
+    url: canonical,
+    mainEntityOfPage: canonical,
+  }
+
   return (
     <Helmet
       htmlAttributes={{ lang }}
@@ -35,52 +57,21 @@ function Seo({ description, lang, meta, title, image, pathname }) {
         },
       ]}
       meta={[
-        {
-          name: "description",
-          content: metaDescription,
-        },
-        {
-          property: "og:title",
-          content: title,
-        },
-        {
-          property: "og:description",
-          content: metaDescription,
-        },
-        {
-          property: "og:type",
-          content: "article",
-        },
-        {
-          property: "og:url",
-          content: canonical,
-        },
-        {
-          property: "og:image",
-          content: metaImage,
-        },
-        {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-        {
-          name: "twitter:creator",
-          content: site.siteMetadata?.author || "",
-        },
-        {
-          name: "twitter:title",
-          content: title,
-        },
-        {
-          name: "twitter:description",
-          content: metaDescription,
-        },
-        {
-          name: "twitter:image",
-          content: metaImage,
-        },
+        { name: "description", content: metaDescription },
+        { property: "og:title", content: title },
+        { property: "og:description", content: metaDescription },
+        { property: "og:type", content: "article" },
+        { property: "og:url", content: canonical },
+        { property: "og:image", content: metaImage },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:creator", content: site.siteMetadata?.author || "" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: metaDescription },
+        { name: "twitter:image", content: metaImage },
       ].concat(meta)}
-    />
+    >
+      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+    </Helmet>
   )
 }
 
