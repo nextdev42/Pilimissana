@@ -13,7 +13,7 @@ const About = () => {
     <Layout>
       <Seo
         title="Kuhusu - PILI Misana Foundation"
-        description="Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidiq waraibu zaidi ya 3500,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya."
+        description="Hii ni Sober house ya kwanza kuanzishwa Tanzania  bara mwaka 2012,na ilianza na waraibu 15 tu,na sasa imesaidia waraibu zaidi ya 3500,na huduma tunazotoa ni tiba kwa waraibu wa pombe,bangi,heroin,cocaine,tramadol,na dawa nyingine za kulevya."
       ></Seo>
       <AboutHeader></AboutHeader>
       <AboutPage></AboutPage>
