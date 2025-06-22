@@ -4,9 +4,9 @@ import BlogsContainer from "../components/Blog/blogsContainer"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
+import { getSrc } from "gatsby-plugin-image"
 
 const Blog = ({ data }) => {
-  console.log("data", data)
   let HeaderPost = data?.allMarkdownRemark?.edges[0]
   let otherPosts = data?.allMarkdownRemark?.edges.slice(1)
 
@@ -14,10 +14,10 @@ const Blog = ({ data }) => {
     <Layout>
       <Seo
         title="Pilimissana - Blog"
-        description="Makala za uraibu zilizo andaliwa na wataalamu wetu kwa lengo la ku elimisha na kusaidia jamii juu ya maradhi ya uraibu"
+        description="Makala za uraibu zilizo andaliwa na wataalamu wetu kwa lengo la kuelimisha na kusaidia jamii juu ya maradhi ya uraibu"
         pathname="/blog"
-        image={HeaderPost?.node?.featuredimage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
-      ></Seo>
+        image={getSrc(HeaderPost?.node?.featuredimage?.childImageSharp?.gatsbyImageData)}
+      />
       <BlogHeader post={HeaderPost} />
       <BlogsContainer data={otherPosts} />
     </Layout>
@@ -44,7 +44,7 @@ export const WorkPageQuery = graphql`
             description
             featuredimage {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
               }
             }
           }
