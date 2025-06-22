@@ -7,8 +7,8 @@ const GalleryPage = () => {
   return (
     <Layout>
       <Seo
-        title="Holo - Gallery"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        title="Pilimissana Sober - picha"
+        description="picha zetu ni sehemu ya kujifunza kwa kujionea mazingira mbali mbali ya sober zetu ambapo waraibu huishi wakipata matibabu, utajionea malazi, makazi, chakula, shughuli mbali mbali za mikono nk"
       ></Seo>
       <Gallery></Gallery>
     </Layout>
