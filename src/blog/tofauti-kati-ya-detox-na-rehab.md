@@ -1,5 +1,5 @@
 ---
-title: "Tofauti Kati ya Detox na Rehab: Hatua Mbili Muhimu Katika Safari ya Kupona"
+title: "Tofauti Kati ya Detox na Rehab"
 date: 2025-06-22
 description: "Soma makala hii kufahamu tofauti kati ya detox na rehab, hatua mbili muhimu katika tiba ya uraibu nchini Tanzania."
 categories:
