@@ -1,4 +1,4 @@
-timport React from "react"
+import React from "react"
 import Input from "../Atoms/input"
 import Button from "../Atoms/button"
 import Fade from "react-reveal/Fade"
