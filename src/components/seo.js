@@ -17,12 +17,24 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     }
   `)
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const {
+    title: defaultTitle,
+    description: defaultDescription,
+    author,
+    siteUrl,
+  } = site.siteMetadata
+
+  const metaDescription = description || defaultDescription
   const pageTitle = title || defaultTitle
-  const siteUrl = site.siteMetadata.siteUrl
-  const canonical = pathname ? `${siteUrl}${pathname}` : siteUrl
-  const metaImage = image ? `${image.startsWith("http") ? image : siteUrl + image}` : `${siteUrl}/img/Polish_20250609_183326692.jpg`
+
+  // Ensure pathname starts with a single slash
+  const normalizedPath = pathname ? `/${pathname.replace(/^\/+/, "")}` : ""
+  const canonical = `${siteUrl}${normalizedPath}`
+
+  // Normalize image URL
+  const metaImage = image
+    ? image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : `/${image}`}`
+    : `${siteUrl}/img/Polish_20250609_183326692.jpg`
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -32,7 +44,7 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     image: [metaImage],
     author: {
       "@type": "Person",
-      name: site.siteMetadata.author,
+      name: author,
     },
     publisher: {
       "@type": "Organization",
@@ -61,13 +73,15 @@ function Seo({ description, lang, meta, title, image, pathname }) {
         { property: "og:image", content: metaImage },
         { property: "og:image:alt", content: pageTitle },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:creator", content: site.siteMetadata?.author || "" },
+        { name: "twitter:creator", content: author || "" },
         { name: "twitter:title", content: pageTitle },
         { name: "twitter:description", content: metaDescription },
         { name: "twitter:image", content: metaImage },
       ].concat(meta)}
     >
-      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
     </Helmet>
   )
 }
