@@ -38,7 +38,6 @@ const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { title, description, featuredimage, date } = post.frontmatter
   const slug = post.fields.slug
-  const siteUrl = data.site.siteMetadata.siteUrl
 
   const nextSlug = pageContext?.next?.fields?.slug || "/"
   const previousSlug = pageContext?.previous?.fields?.slug || "/"
@@ -56,12 +55,13 @@ const BlogPost = ({ data, pageContext }) => {
 
   const isoDate = new Date(date).toISOString().split("T")[0]
 
-  const imageSrc = featuredimage ? getSrc(getImage(featuredimage)) : null
+  const imageObj = getImage(featuredimage)
+  const imageSrc = imageObj ? getSrc(imageObj) : null
 
   return (
     <Layout>
       <Seo
-        title={title}
+        title={title?.trim() || "Blog Post"}
         description={description}
         pathname={`/${slug.replace(/^\/+/, "")}`}
         image={imageSrc}
@@ -76,10 +76,10 @@ const BlogPost = ({ data, pageContext }) => {
               </h1>
             </header>
 
-            {featuredimage && (
+            {imageObj && (
               <div className="post-content-image">
                 <GatsbyImage
-                  image={getImage(featuredimage)}
+                  image={imageObj}
                   className="lg:mb-2 overflow-hidden rounded-xl"
                   alt={title}
                 />
@@ -166,6 +166,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-
-
