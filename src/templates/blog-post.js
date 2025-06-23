@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 import LeftIcon from "../images/left-icon.svg"
 import RightIcon from "../images/right-icon.svg"
 import styled from "styled-components"
@@ -37,6 +37,8 @@ const InfoIcon = styled.span`
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { title, description, featuredimage, date } = post.frontmatter
+  const slug = post.fields.slug
+  const siteUrl = data.site.siteMetadata.siteUrl
 
   const nextSlug = pageContext?.next?.fields?.slug || "/"
   const previousSlug = pageContext?.previous?.fields?.slug || "/"
@@ -56,7 +58,12 @@ const BlogPost = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Seo title={title} description={description} />
+      <Seo
+        title={title}
+        description={description}
+        pathname={slug}
+        image={getSrc(getImage(featuredimage))}
+      />
 
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
@@ -135,11 +142,15 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date
