@@ -17,26 +17,22 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     }
   `)
 
-  const {
-    title: defaultTitle,
-    description: siteDescription,
-    author,
-    siteUrl,
-  } = site.siteMetadata
-
-  const metaDescription = description || siteDescription
+  const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = site.siteMetadata?.title
+  const pageTitle = title || defaultTitle
+  const siteUrl = site.siteMetadata.siteUrl
   const canonical = pathname ? `${siteUrl}${pathname}` : siteUrl
-  const metaImage = image?.startsWith("http") ? image : `${siteUrl}${image || "/img/Polish_20250609_183326692.jpg"}`
+  const metaImage = image ? `${image.startsWith("http") ? image : siteUrl + image}` : `${siteUrl}/img/Polish_20250609_183326692.jpg`
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: title,
+    headline: pageTitle,
     description: metaDescription,
     image: [metaImage],
     author: {
       "@type": "Person",
-      name: author,
+      name: site.siteMetadata.author,
     },
     publisher: {
       "@type": "Organization",
@@ -53,27 +49,25 @@ function Seo({ description, lang, meta, title, image, pathname }) {
   return (
     <Helmet
       htmlAttributes={{ lang }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
+      title={pageTitle}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       link={[{ rel: "canonical", href: canonical }]}
       meta={[
         { name: "description", content: metaDescription },
-        { property: "og:title", content: title },
+        { property: "og:title", content: pageTitle },
         { property: "og:description", content: metaDescription },
         { property: "og:type", content: "article" },
         { property: "og:url", content: canonical },
         { property: "og:image", content: metaImage },
-        { property: "og:image:alt", content: title },
+        { property: "og:image:alt", content: pageTitle },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:creator", content: author },
-        { name: "twitter:title", content: title },
+        { name: "twitter:creator", content: site.siteMetadata?.author || "" },
+        { name: "twitter:title", content: pageTitle },
         { name: "twitter:description", content: metaDescription },
         { name: "twitter:image", content: metaImage },
       ].concat(meta)}
     >
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
     </Helmet>
   )
 }
