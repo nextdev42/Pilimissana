@@ -24,8 +24,9 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     siteUrl,
   } = site.siteMetadata
 
-  const metaDescription = description || defaultDescription
+  const metaDescription = description?.trim() || defaultDescription
   const pageTitle = title?.trim() || defaultTitle
+
   const normalizedPath = pathname ? `/${pathname.replace(/^\/+/, "")}` : ""
   const canonical = `${siteUrl}${normalizedPath}`
 
@@ -41,11 +42,17 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     headline: pageTitle,
     description: metaDescription,
     image: [metaImage],
-    author: { "@type": "Person", name: author },
+    author: {
+      "@type": "Person",
+      name: author,
+    },
     publisher: {
       "@type": "Organization",
       name: defaultTitle,
-      logo: { "@type": "ImageObject", url: `${siteUrl}/img/Polish_20250609_183326692.jpg` },
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/img/Polish_20250609_183326692.jpg`,
+      },
     },
     url: canonical,
     mainEntityOfPage: canonical,
@@ -55,12 +62,9 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={pageTitle}
-      titleTemplate="%s"
+      titleTemplate={title && title !== defaultTitle ? `%s | ${defaultTitle}` : `%s`}
       link={[{ rel: "canonical", href: canonical }]}
       meta={[
-        // debug meta to confirm pageTitle reaches head:
-        { name: "debug-page-title", content: pageTitle },
-
         { name: "description", content: metaDescription },
         { property: "og:title", content: pageTitle },
         { property: "og:description", content: metaDescription },
