@@ -54,7 +54,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "postbuild": "node ping-google.js",
+    "postbuild": "node ping-search-engines.js",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
