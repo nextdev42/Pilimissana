@@ -1,6 +1,4 @@
 import React from "react"
-import Input from "../Atoms/input"
-import Button from "../Atoms/button"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import { marked } from "marked"
@@ -15,68 +13,60 @@ const BlogsContainer = ({ data }) => {
 
   return (
     <div className="max-w-7xl mx-auto mt-10 px-8 text-black">
-        <div className="grid grid-cols-3 gap-4 xxs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((blog, i) => (
-            <div key={i}>
-              <div className="overflow-hidden rounded-xl xxs:w-full">
-                <Link to={blog.slug} style={{ textDecoration: "none", color: "black" }}>
-                  <GatsbyImage
-                    image={getImage(blog.featuredimage)}
-                    alt={blog.title}
-                    placeholder="none"
-                    layout="cover"
-                    formats={["auto", "webp", "avif"]}
-                    quality={100}
-                    className="img"
-                  />
-                </Link>
-              </div>
-              <div className="m-6">
-                <Link to={blog.slug} style={{ textDecoration: "none", color: "black" }}>
-                  <h1 className="text-2xl font-semibold mt-2 mb-4">{blog.title}</h1>
-                </Link>
-
-                {/* Render Markdown in description */}
-                <p
-                  className="text-sm opacity-50 mt-2"
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parse(blog.description || ""),
-                  }}
-                />
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((blog, i) => (
+          <div
+            key={i}
+            className="overflow-hidden rounded-xl bg-white shadow-md animate-fade-in transition-transform hover:scale-105"
+          >
+            <Link to={blog.slug} className="block">
+              <GatsbyImage
+                image={getImage(blog.featuredimage)}
+                alt={blog.title}
+                className="w-full h-48 object-cover"
+              />
+            </Link>
+            <div className="p-6">
+              <Link to={blog.slug}>
+                <h2 className="text-2xl font-semibold mb-3 hover:text-purple transition-colors">
+                  {blog.title}
+                </h2>
+              </Link>
+              <p
+                className="text-sm text-gray-600"
+                dangerouslySetInnerHTML={{
+                  __html: marked.parse(blog.description || ""),
+                }}
+              />
             </div>
-          ))}
-        </div>
-      
+          </div>
+        ))}
+      </div>
 
-      {/* Netlify Newsletter Form */}
-      <div className="w-auto p-8 m-4 h-72 sm:h-96 xs:h-96 xxs:h-96 mt-10 bg-gradient-to-r from-pink to-purple rounded-xl flex flex-col items-center justify-center">
-        <h2 className="text-3xl font-bold text-black text-center">
-          KUPATA MAKALA ZETU
-        </h2>
-        <h3 className="text-lg mt-2 opacity-60 text-black text-center">
+      {/* Newsletter Form */}
+      <div className="mt-16 p-8 rounded-xl bg-gradient-to-r from-pink to-purple text-center text-black">
+        <h2 className="text-3xl font-bold">KUPATA MAKALA ZETU</h2>
+        <p className="text-lg mt-2 opacity-70">
           Jiunge kwenye newsletter, tuta kutumia vitu vizuri tu!
-        </h3>
+        </p>
 
         <form
           name="newsletter"
           method="POST"
           data-netlify="true"
-          className="mt-10 flex flex-col items-center justify-center"
+          className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <input type="hidden" name="form-name" value="newsletter" />
-
           <input
             type="email"
             name="email"
             required
             placeholder="Weka Email yako"
-            className="text-black p-2 rounded mb-4"
+            className="w-full sm:w-auto p-2 rounded text-black"
           />
-
           <button
             type="submit"
-            className="transition-all duration-500 ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-black hover:text-white rounded-lg border border-purple hover:bg-purple"
+            className="bg-white border border-purple text-purple font-medium px-6 py-2 rounded-lg hover:bg-purple hover:text-white transition-all"
           >
             Jiunge
           </button>
