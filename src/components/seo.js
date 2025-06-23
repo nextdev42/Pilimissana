@@ -55,7 +55,7 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={pageTitle}
-      titleTemplate={defaultTitle && title ? `%s | ${defaultTitle}` : `%s`}
+      titleTemplate="%s"
       link={[{ rel: "canonical", href: canonical }]}
       meta={[
         // debug meta to confirm pageTitle reaches head:
