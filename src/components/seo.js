@@ -17,11 +17,16 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     }
   `)
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-  const siteUrl = site.siteMetadata.siteUrl
+  const {
+    title: defaultTitle,
+    description: siteDescription,
+    author,
+    siteUrl,
+  } = site.siteMetadata
+
+  const metaDescription = description || siteDescription
   const canonical = pathname ? `${siteUrl}${pathname}` : siteUrl
-  const metaImage = image ? `${siteUrl}${image}` : `${siteUrl}/img/Polish_20250609_183326692.jpg`
+  const metaImage = image?.startsWith("http") ? image : `${siteUrl}${image || "/img/Polish_20250609_183326692.jpg"}`
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -31,7 +36,7 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     image: [metaImage],
     author: {
       "@type": "Person",
-      name: site.siteMetadata.author,
+      name: author,
     },
     publisher: {
       "@type": "Organization",
@@ -49,13 +54,8 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      link={[
-        {
-          rel: "canonical",
-          href: canonical,
-        },
-      ]}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
+      link={[{ rel: "canonical", href: canonical }]}
       meta={[
         { name: "description", content: metaDescription },
         { property: "og:title", content: title },
@@ -63,14 +63,17 @@ function Seo({ description, lang, meta, title, image, pathname }) {
         { property: "og:type", content: "article" },
         { property: "og:url", content: canonical },
         { property: "og:image", content: metaImage },
+        { property: "og:image:alt", content: title },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:creator", content: site.siteMetadata?.author || "" },
+        { name: "twitter:creator", content: author },
         { name: "twitter:title", content: title },
         { name: "twitter:description", content: metaDescription },
         { name: "twitter:image", content: metaImage },
       ].concat(meta)}
     >
-      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
     </Helmet>
   )
 }
