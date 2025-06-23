@@ -1,4 +1,4 @@
-import React from "react"
+timport React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
@@ -56,13 +56,15 @@ const BlogPost = ({ data, pageContext }) => {
 
   const isoDate = new Date(date).toISOString().split("T")[0]
 
+  const imageSrc = featuredimage ? getSrc(getImage(featuredimage)) : null
+
   return (
     <Layout>
       <Seo
         title={title}
         description={description}
-        pathname={slug}
-        image={getSrc(getImage(featuredimage))}
+        pathname={`/${slug.replace(/^\/+/, "")}`}
+        image={imageSrc}
       />
 
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
@@ -164,3 +166,6 @@ export const pageQuery = graphql`
     }
   }
 `
+
+
+
