@@ -25,15 +25,14 @@ function Seo({ description, lang, meta, title, image, pathname }) {
   } = site.siteMetadata
 
   const metaDescription = description || defaultDescription
-  const pageTitle = title || defaultTitle
-
-  // Ensure pathname starts with a single slash
+  const pageTitle = title?.trim() || defaultTitle
   const normalizedPath = pathname ? `/${pathname.replace(/^\/+/, "")}` : ""
   const canonical = `${siteUrl}${normalizedPath}`
 
-  // Normalize image URL
   const metaImage = image
-    ? image.startsWith("http") ? image : `${siteUrl}${image.startsWith("/") ? image : `/${image}`}`
+    ? image.startsWith("http")
+      ? image
+      : `${siteUrl}${image.startsWith("/") ? image : `/${image}`}`
     : `${siteUrl}/img/Polish_20250609_183326692.jpg`
 
   const structuredData = {
@@ -62,7 +61,7 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={pageTitle}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle && title !== defaultTitle ? `%s | ${defaultTitle}` : `%s`}
       link={[{ rel: "canonical", href: canonical }]}
       meta={[
         { name: "description", content: metaDescription },
