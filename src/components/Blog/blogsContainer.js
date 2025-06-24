@@ -1,7 +1,6 @@
 import React from "react"
 import Input from "../Atoms/input"
 import Button from "../Atoms/button"
-import Fade from "react-reveal/Fade"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import { marked } from "marked"
@@ -16,7 +15,6 @@ const BlogsContainer = ({ data }) => {
 
   return (
     <div className="max-w-7xl mx-auto mt-10 px-8 text-black">
-      <Fade bottom cascade duration={300}>
         <div className="grid grid-cols-3 gap-4 xxs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((blog, i) => (
             <div key={i}>
@@ -49,7 +47,7 @@ const BlogsContainer = ({ data }) => {
             </div>
           ))}
         </div>
-      </Fade>
+      
 
       {/* Netlify Newsletter Form */}
       <div className="w-auto p-8 m-4 h-72 sm:h-96 xs:h-96 xxs:h-96 mt-10 bg-gradient-to-r from-pink to-purple rounded-xl flex flex-col items-center justify-center">
