@@ -1,66 +1,68 @@
+# Pilimissanasoberhouse.co.tz
 
- <h1 align="center">Holo - Gatsby Theme </h1>
+A JAMstack website built to support mental health and addiction recovery awareness in Tanzania. This platform provides blog content, educational resources, and community outreach in both English and Swahili.
 
+## 🌐 Live Site
 
-![Holo - Gatsby Theme](https://github.com/lilxyzz/holo-theme/blob/main/static/img/holo-cover.png)
+Visit the live site here: [https://pilimissanasoberhouse.co.tz](https://pilimissanasoberhouse.co.tz)
 
-Welcome to the ultimate blend of technologies that promises to revolutionize your web development experience. The Holo template is designed to kickstart your project with elegance and efficiency.
+## 💡 Project Overview
 
-## 📚 Tech Stack
+This project was developed to help a local sober house establish a digital presence, share informative articles, and reach a broader audience through SEO-friendly and mobile-first design.
 
-- Gatsby 5+
-- React 18+
-- Tailwind CSS 3+
-- Decap CMS (formerly Netlify CMS) 4+
- 
+Key goals:
+- Raise awareness about addiction recovery
+- Publish bilingual blog content (English + Swahili)
+- Optimize for Google indexing and searchability
+- Enable non-technical staff to update site content via Markdown
 
-## 🚀 How To Use
+## 🛠️ Built With
 
-To embark on your development adventure, follow these simple steps:
+- [GatsbyJS](https://www.gatsbyjs.com/)
+- [React](https://reactjs.org/)
+- [Markdown CMS (File-based)](https://www.markdownguide.org/)
+- [Netlify](https://www.netlify.com/) for hosting & deployment
+- [Canva](https://www.canva.com/) for blog & social media visuals
+- SEO plugins + sitemap + schema.org
 
-**Clone this repository**
+## 📌 Features
 
-```git clone https://github.com/lilxyzz/holo-theme.git```
+- Static site generation for speed and security
+- Markdown-powered blog system
+- Responsive design optimized for mobile
+- SEO meta tags, structured data & sitemap.xml
+- Bilingual-ready architecture (Swahili & English)
+- Social media content support & image previews
 
-**Navigate into the repository**
+## 🔍 SEO & Accessibility
 
-```cd holo-theme```
+- Sitemap and robots.txt generated via Gatsby plugins
+- Meta descriptions and OpenGraph tags for each post
+- Structured data schema to enhance visibility on Google
+- ALT tags and clean semantic HTML for accessibility
 
-**Install dependencies**
+## 📷 Sample Content
 
-```yarn```
+- Blog: “Uraibu ni Nini?” – What is addiction?
+- Blog: “Tofauti Kati ya Detox na Rehab” – Detox vs Rehab
+- Translations for community understanding in Swahili
 
-**Fire up the development server**
+## 🙋‍♂️ Author
 
-```gatsby develop```
+**Jonathan Mrutu**  
+- 📍 Tanzania  
+- 💼 Solution Architecture Developer & Digital Literacy Trainer  
+- GitHub: [Kazz54](https://github.com/Kazz54) | [nextdev42](https://github.com/nextdev42)  
+- Email: jonathan.mrutu@protonmail.com
 
-## ✨ Voila!
+## 🚀 Future Work
 
-Your site is now running at http://localhost:8000
+- Add multilingual switcher
+- Build CMS dashboard for easier non-technical publishing
+- Add resource hub for local support groups & recovery centers
 
-Open the source code and start editing!
+---
 
-You're now ready to develop with the speed of Gatsby and the flexibility of Tailwind, powered by the robustness of React.
+**Feel free to fork, clone, or contribute.**  
+Empowering communities through code.
 
-### Deploying to Netlify
-
-[![Deploy to Netlify ](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lilxyzz/holo-theme)
-
-You could also host directly with Netlify by linking your own repository.
-For more information, read [hosting on Netlify](https://docs.netlify.com/get-started/).
-
-## 🤝 Contributing
-
-Got enhancements you envision? Contributions are welcome! Fork the repo, push your changes, and submit a pull request. Let's make this theme better, together.
-
-## 👾 Issues
-
-For any challenges encountered, please feel free to report issues through our issue tracker.
-
-## 🙏 Thanks
-
-If you like this theme, don't forget to give it a ⭐.
-
-## 📝 License
-
-This project is open source and available under the MIT License.
