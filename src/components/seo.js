@@ -24,9 +24,16 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     siteUrl,
   } = site.siteMetadata
 
-  const metaDescription = description?.trim() || defaultDescription
-  const pageTitle = title?.trim() || defaultTitle
+  // Debug logging
+  if (typeof window !== "undefined") {
+    console.log("SEO → title prop:", title)
+    console.log("SEO → default site title:", defaultTitle)
+  }
 
+  const safeTitle = (typeof title === "string" && title.trim()) ? title.trim() : null
+  const pageTitle = safeTitle || defaultTitle
+
+  const metaDescription = description?.trim() || defaultDescription
   const normalizedPath = pathname ? `/${pathname.replace(/^\/+/, "")}` : ""
   const canonical = `${siteUrl}${normalizedPath}`
 
@@ -62,7 +69,7 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={pageTitle}
-      titleTemplate={`%s | ${defaultTitle}`} // ✅ always append site title
+      titleTemplate={safeTitle ? `%s | ${defaultTitle}` : `%s`} // Skip template if title not passed
       link={[{ rel: "canonical", href: canonical }]}
       meta={[
         { name: "description", content: metaDescription },
@@ -98,7 +105,7 @@ Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   image: PropTypes.string,
   pathname: PropTypes.string,
 }
