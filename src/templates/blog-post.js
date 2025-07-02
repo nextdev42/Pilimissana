@@ -137,6 +137,24 @@ const BlogPost = ({ data, pageContext }) => {
   )
 }
 
+// **NEW** Head export for SEO support in Gatsby v4+
+export const Head = ({ data }) => {
+  const post = data.markdownRemark
+  const { title, description, featuredimage } = post.frontmatter
+  const imageObj = getImage(featuredimage)
+  const imageSrc = imageObj ? getSrc(imageObj) : null
+  const slug = post.fields.slug
+
+  return (
+    <Seo
+      title={title}
+      description={description}
+      pathname={`/${slug.replace(/^\/+/, "")}`}
+      image={imageSrc}
+    />
+  )
+}
+
 export default BlogPost
 
 export const pageQuery = graphql`
