@@ -62,7 +62,7 @@ function Seo({ description, lang, meta, title, image, pathname }) {
     <Helmet
       htmlAttributes={{ lang }}
       title={pageTitle}
-      titleTemplate={title && title !== defaultTitle ? `%s | ${defaultTitle}` : `%s`}
+      titleTemplate={`%s | ${defaultTitle}`} // ✅ always append site title
       link={[{ rel: "canonical", href: canonical }]}
       meta={[
         { name: "description", content: metaDescription },
@@ -79,7 +79,9 @@ function Seo({ description, lang, meta, title, image, pathname }) {
         { name: "twitter:image", content: metaImage },
       ].concat(meta)}
     >
-      <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
     </Helmet>
   )
 }
