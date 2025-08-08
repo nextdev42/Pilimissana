@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Matumizi ya Carbamazepine kwa Watumiaji wa Madawa ya Kulevya
 date: 2025-08-08T15:47:18.616Z
-featuredimage: /img/myriam-zilles-KltoLK6Mk-g-unsplash.jpg
+featuredimage: /img/carbamazepine.jpeg
 categories:
   - blog
 tags:
