@@ -7559,10 +7559,10 @@ gatsby-remark-responsive-iframe@^6.13.2:
     lodash "^4.17.21"
     unist-util-visit "^2.0.3"
 
-gatsby-remark-smartypants@^6.13.0:
-  version "6.13.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-6.13.1.tgz#63a77ea336b482db88b78aceb2b8b9dae8b1104a"
-  integrity sha512-0OI+BIzpQSOzQEiySdjO5h/nqp+aCFCXxONyZYh/7lRTjLTohQ+2AGmD70Ik15Fb+CYAB+5AEBfrarG5MAq8iQ==
+gatsby-remark-smartypants@^6.15.0:
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-smartypants/-/gatsby-remark-smartypants-6.15.0.tgz#c85c386da28d8e6f1d3dafe8d2a07e91f56aadc2"
+  integrity sha512-+E5VCjntr3e9XHrIqQHfOyQ/jLMOHgA2IXXtqCesA5n/6ll5DfWIgULpfO8tV6QHUcPoP5mY1AjB/blm3qH6HQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     retext "^7.0.1"
@@ -10046,6 +10046,11 @@ markdown-table@^2.0.0:
   integrity sha512-Ezda85ToJUBhM6WGaG6veasyym+Tbs3cMAw/ZhOPqXiYsr0jgocBV3j3nx+4lk47plLlIqjwuTm/ywVI+zjJ/A==
   dependencies:
     repeat-string "^1.0.0"
+
+marked@^15.0.12:
+  version "15.0.12"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-15.0.12.tgz#30722c7346e12d0a2d0207ab9b0c4f0102d86c4e"
+  integrity sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==
 
 material-colors@^1.2.1:
   version "1.2.6"
